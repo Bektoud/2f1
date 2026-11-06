@@ -1,0 +1,74 @@
+[
+  {
+    "id": "familien",
+    "name": "Familien",
+    "icon": "family",
+    "intro": "Kleine Entdecker, grosse gemeinsame Momente.",
+    "angebote": [
+      {"nr": 69, "satz": "Ein Tag fürs Entdecken: Tageskarten fürs Technorama gibt es hier als 2für1."},
+      {"nr": 72, "satz": "Ab ins Kinderparadies! Bei Topolino wartet euer nächster 2für1-Ausflug."},
+      {"nr": 41, "satz": "Die ganze Technikwelt entdecken – mit dem 2für1-Tagespass von Enter."},
+      {"nr": 77, "satz": "Kinder-Camp in Frenkendorf, Liestal oder Sissach? Spare 50 % auf die Teilnahme."}
+    ]
+  },
+  {
+    "id": "sportfans",
+    "name": "Sportfans",
+    "icon": "activity",
+    "intro": "Mitfiebern, mitspielen, gemeinsam mehr bewegen.",
+    "angebote": [
+      {"nr": 45, "satz": "Gemeinsam mitfiebern: 2für1 an einem Meisterschaftsspiel der ersten FCB-Mannschaft."},
+      {"nr": 39, "satz": "Mehr gemeinsame Fanmomente mit dem 2für1-Einzelticket beim EHC Basel."},
+      {"nr": 58, "satz": "Zeit für Padel: Ab 90 Minuten gibt es die Platzmiete zum halben Preis."},
+      {"nr": 67, "satz": "Tennis oder Badminton? Spare 50 % auf die Platzmiete für deine nächste Spielstunde."}
+    ]
+  },
+  {
+    "id": "geniesser",
+    "name": "Geniesser",
+    "icon": "food",
+    "intro": "Gute Gespräche beginnen oft an einem gedeckten Tisch.",
+    "angebote": [
+      {"nr": 23, "satz": "Lust auf Tapas? Entdecke die gemischte Platte «Plato de Don Antonio» als 2für1."},
+      {"nr": 2, "satz": "«Huus» Cordon bleu mit Pommes oder Fitness – und ein 2für1-Deal zum Geniessen."},
+      {"nr": 7, "satz": "So beginnt der Tag genussvoll: eine Frühstücks-Etagere im 2für1-Angebot."},
+      {"nr": 25, "satz": "Burger-Date gefällig? Bei The Burger by Tender and Loins heisst es 2für1."}
+    ]
+  },
+  {
+    "id": "paare",
+    "name": "Paare",
+    "icon": "heart",
+    "intro": "Die schönsten Pläne macht man zu zweit.",
+    "angebote": [
+      {"nr": 119, "satz": "Zeit zu zweit: ein Hamam-Tag inklusive Bad und Sauna im 2für1-Angebot."},
+      {"nr": 53, "satz": "Zusammen ins Kino Sputnik – mit einem 2für1-Angebot für euren Eintritt."},
+      {"nr": 17, "satz": "Ein Essen zu zweit? Der Hauptgang im À-la-carte-Restaurant wartet als 2für1."},
+      {"nr": 93, "satz": "Raus aus dem Alltag: Entdecke die 2für1-Übernachtung im Hotel Bad Eptingen."}
+    ]
+  },
+  {
+    "id": "freunde",
+    "name": "Freunde & Action",
+    "icon": "bolt",
+    "intro": "Aus «Wir sollten mal» wird euer nächstes Erlebnis.",
+    "angebote": [
+      {"nr": 38, "satz": "«Kart» oder «Game of Karts»? Sichert euch 50 % Rabatt für die nächste Runde."},
+      {"nr": 42, "satz": "Minigolf im Schwarzlicht – gemeinsam spielen mit 2für1-Eintritt."},
+      {"nr": 61, "satz": "Euer nächster Ausflug führt in den Seilpark Balmberg: Eintritt als 2für1."},
+      {"nr": 59, "satz": "Racing für eure Runde: 50 % Rabatt auf 2–3 Stunden für 1–6 Personen."}
+    ]
+  },
+  {
+    "id": "auszeit",
+    "name": "Auszeit",
+    "icon": "leaf",
+    "intro": "Weniger Alltag. Mehr Zeit für dich.",
+    "angebote": [
+      {"nr": 126, "satz": "Einfach mal abschalten: Entdecke den 2für1-Eintritt bei sole uno."},
+      {"nr": 127, "satz": "Ein Tag für dich und deine Begleitung – mit 2für1 auf den Eintritt «Ein und Alles»."},
+      {"nr": 123, "satz": "Wähle deine Massage und geniesse 50 % Rabatt bei Massage Praxis Bühler."},
+      {"nr": 102, "satz": "Zeit für ruhige Klänge: Entdecke die Klangschalen-Massage/-Therapie als 2für1."}
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "name": "gutscheinbuch-basel-landschaft",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Autarkes Gutscheinbuch als einzelne Offline-HTML-Datei",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "audit": "python3 tools/build.py --audit",
+    "test:static": "python3 tests/check_build.py",
+    "test:browser": "node tests/browser.cjs",
+    "test": "npm run test:static && npm run test:browser"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "playwright": "1.65.0"
+  }
+}

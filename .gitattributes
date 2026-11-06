@@ -1,0 +1,4 @@
+# Preserve the uploaded JSON byte-for-byte, including its Windows line endings.
+angebote_basel-landschaft.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+basel-landschaft-gutscheine-2027-bilder.zip -text
+index.html text eol=lf linguist-generated=true

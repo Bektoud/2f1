@@ -1,0 +1,141 @@
+{
+  "region": "Basel-Landschaft (Liestal & Oberes Baselbiet 2027)",
+  "angebote": 128,
+  "firmen": 118,
+  "kategorien": {
+    "Essen & Trinken": 27,
+    "Ausgang & Nachtleben": 5,
+    "Freizeit & Sport": 46,
+    "Einkaufen & Dienstleistungen": 39,
+    "Wellness & Beauty": 11
+  },
+  "dealtypen": {
+    "2für1": 86,
+    "50% Rabatt": 37,
+    "4für2 oder 2für1": 1,
+    "50% Rabatt oder 2für1": 1,
+    "2für1 oder 50% Rabatt": 1,
+    "4für2": 1,
+    "8für4": 1
+  },
+  "zuordnung": "manifest.json -> Angebots-ID -> dateien -> Bildart; Abgleich mit ID-Ordner",
+  "fehlende_bilder": [
+    {
+      "nr": 71,
+      "id": "efe9bea9-32c8-48ca-8c47-180ea21d90d3",
+      "firma": "Tennisclub Sissach",
+      "bildart": "Rückseite",
+      "manifest_pfad": null
+    },
+    {
+      "nr": 121,
+      "id": "d77709d1-5b31-4dc5-9b93-92cac97f59f3",
+      "firma": "Atelier ZwygArt GmbH",
+      "bildart": "Rückseite",
+      "manifest_pfad": null
+    }
+  ],
+  "nicht_zugeordnete_bilder": [],
+  "sonstige_dateien": [
+    "manifest.json"
+  ],
+  "formatfehler": [],
+  "identische_bildinhalte": [
+    [
+      {
+        "nr": 57,
+        "firma": "Museum.BL",
+        "bildart": "Vorderseite",
+        "pfad": "935374ac-5a3c-4145-a361-a0f70f2afb4e/vorderseite.jpg"
+      },
+      {
+        "nr": 70,
+        "firma": "Tenniscenter Ergolz",
+        "bildart": "Rückseite",
+        "pfad": "e9b4be32-c869-44fb-99df-3a2194d50e5d/rueckseite.jpg"
+      }
+    ]
+  ],
+  "abmessungen": {
+    "angebotsbild": {
+      "500 × 222": 106,
+      "500 × 221": 17,
+      "500 × 223": 5
+    },
+    "rueckseite": {
+      "1206 × 1700": 126
+    },
+    "vorderseite": {
+      "1206 × 1700": 128
+    }
+  },
+  "zip_dateien": 383,
+  "zip_bytes": 36836908,
+  "zip_entpackte_bytes": 36768020,
+  "ordner": 128,
+  "reihenfolge": "Dateipfade lexikografisch sortiert",
+  "manifest_reihenfolge": true,
+  "jpgs_mit_gueltigen_magic_bytes": 382,
+  "kompression": {
+    "format": "WebP, Base64-Data-URIs",
+    "profile": {
+      "angebotsbild": {
+        "max_edge": 480,
+        "quality": 80
+      },
+      "vorderseite": {
+        "max_edge": 1500,
+        "quality": 84
+      },
+      "rueckseite": {
+        "max_edge": 1700,
+        "quality": 88
+      }
+    },
+    "original_bytes_verwendeter_bilder": 36475433,
+    "optimierte_bildbytes": 24527354,
+    "nach_bildart": {
+      "angebotsbild": {
+        "anzahl": 128,
+        "original_bytes": 1733224,
+        "webp_bytes": 1202812
+      },
+      "rueckseite": {
+        "anzahl": 125,
+        "original_bytes": 10095649,
+        "webp_bytes": 7083736
+      },
+      "vorderseite": {
+        "anzahl": 128,
+        "original_bytes": 24646560,
+        "webp_bytes": 16240806
+      }
+    },
+    "eingebettete_bilder": 381
+  },
+  "bestaetigte_ersatzdarstellungen": [
+    {
+      "nr": 71,
+      "id": "efe9bea9-32c8-48ca-8c47-180ea21d90d3",
+      "firma": "Tennisclub Sissach",
+      "bildart": "Rückseite",
+      "manifest_pfad": null
+    },
+    {
+      "nr": 121,
+      "id": "d77709d1-5b31-4dc5-9b93-92cac97f59f3",
+      "firma": "Atelier ZwygArt GmbH",
+      "bildart": "Rückseite",
+      "manifest_pfad": null
+    },
+    {
+      "nr": 70,
+      "id": "e9b4be32-c869-44fb-99df-3a2194d50e5d",
+      "firma": "Tenniscenter Ergolz",
+      "bildart": "Rückseite",
+      "grund": "Fälschlich enthaltene Museum.BL-Vorderseite; Ersatzdarstellung vom Nutzer bestätigt."
+    }
+  ],
+  "html_bytes": 32863344,
+  "html_sha256": "a7d00fa9032f44700a299a4d1b450aa4385c3fb9ad56c1c2670f09537e1dc912"
+}

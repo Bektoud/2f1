@@ -1,0 +1,5 @@
+.image-cache.json
+__pycache__/
+node_modules/
+test-results/
+.venv/

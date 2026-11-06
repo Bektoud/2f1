@@ -1,0 +1,2823 @@
+{
+  "anzahl": 128,
+  "hinweis": "Die Kategorien sind aus der Randfarbe der Karten abgeleitet (orange, blau, grün, gelb, pink) und die Namen sind eine Interpretation, im HTML stehen sie nicht.",
+  "angebote": [
+    {
+      "nr": 1,
+      "id": "70555a4a-2ff4-4005-9084-b2368df67f04",
+      "firma": "Aleppo Take Away",
+      "angebot": "2FÜR1 FALAFELSANDWICH",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/70555a4a-2ff4-4005-9084-b2368df67f04/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/70555a4a-2ff4-4005-9084-b2368df67f04/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/70555a4a-2ff4-4005-9084-b2368df67f04/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 2,
+      "id": "03945eb4-9266-4530-99fa-78401c2399d9",
+      "firma": "Bergrestaurant Stierenberg",
+      "angebot": "2FÜR1 «HUUS» CORDON BLEU MIT POMMES ODER FITNESS",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/03945eb4-9266-4530-99fa-78401c2399d9/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/03945eb4-9266-4530-99fa-78401c2399d9/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/03945eb4-9266-4530-99fa-78401c2399d9/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 3,
+      "id": "59df5746-e0df-4017-903b-e43d1a7a50ca",
+      "firma": "Bierfabrik",
+      "angebot": "2FÜR1 BIER",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/59df5746-e0df-4017-903b-e43d1a7a50ca/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/59df5746-e0df-4017-903b-e43d1a7a50ca/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/59df5746-e0df-4017-903b-e43d1a7a50ca/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 4,
+      "id": "9d4c09b7-7e9b-4877-9c2b-ac08a92c034e",
+      "firma": "Bo`s Diner",
+      "angebot": "2FÜR1 PIDE NACH WAHL",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/9d4c09b7-7e9b-4877-9c2b-ac08a92c034e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/9d4c09b7-7e9b-4877-9c2b-ac08a92c034e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/9d4c09b7-7e9b-4877-9c2b-ac08a92c034e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 5,
+      "id": "b6998a59-316c-4fc4-81c0-f61b835bde9e",
+      "firma": "Bredella Village",
+      "angebot": "2FÜR1 PORTION RACLETTE",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b6998a59-316c-4fc4-81c0-f61b835bde9e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b6998a59-316c-4fc4-81c0-f61b835bde9e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b6998a59-316c-4fc4-81c0-f61b835bde9e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 6,
+      "id": "77a33ba0-7524-4837-ba30-a86990c0d9cd",
+      "firma": "Café Bäckerei Maier",
+      "angebot": "2FÜR1 MITTAGSMENU MIT SALAT",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/77a33ba0-7524-4837-ba30-a86990c0d9cd/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/77a33ba0-7524-4837-ba30-a86990c0d9cd/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/77a33ba0-7524-4837-ba30-a86990c0d9cd/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 7,
+      "id": "540a7cfa-1ca7-44be-a329-be87bc52a8e3",
+      "firma": "CAFE CAPRICE",
+      "angebot": "2FÜR1 FRÜHSTÜCKS-ETAGERE",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/540a7cfa-1ca7-44be-a329-be87bc52a8e3/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/540a7cfa-1ca7-44be-a329-be87bc52a8e3/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/540a7cfa-1ca7-44be-a329-be87bc52a8e3/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 8,
+      "id": "818a5be7-e2b4-47ef-b06b-6131b15ef365",
+      "firma": "Gasthof Alpbad",
+      "angebot": "2FÜR1 ALPBAD-KAFFI",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/818a5be7-e2b4-47ef-b06b-6131b15ef365/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/818a5be7-e2b4-47ef-b06b-6131b15ef365/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/818a5be7-e2b4-47ef-b06b-6131b15ef365/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 9,
+      "id": "23798f95-c69a-42cc-910f-d939ce681404",
+      "firma": "Hotel Bad Eptingen",
+      "angebot": "2FÜR1 MITTAGSMENU",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/23798f95-c69a-42cc-910f-d939ce681404/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/23798f95-c69a-42cc-910f-d939ce681404/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/23798f95-c69a-42cc-910f-d939ce681404/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 10,
+      "id": "c821b86c-62cd-4177-8b31-fcec9c57a974",
+      "firma": "Kultur Marabu Gelterkinden",
+      "angebot": "2FÜR1 GETRÄNK AN DER MARABU BAR",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c821b86c-62cd-4177-8b31-fcec9c57a974/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c821b86c-62cd-4177-8b31-fcec9c57a974/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c821b86c-62cd-4177-8b31-fcec9c57a974/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 11,
+      "id": "85bff3a7-31e9-4692-8108-35bfaa9b4a08",
+      "firma": "Landhus",
+      "angebot": "2FÜR1 LANDHUS-TELLER",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/85bff3a7-31e9-4692-8108-35bfaa9b4a08/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/85bff3a7-31e9-4692-8108-35bfaa9b4a08/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/85bff3a7-31e9-4692-8108-35bfaa9b4a08/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 12,
+      "id": "a1ee5fc3-2e17-4592-84bf-a46ca82e86e0",
+      "firma": "McDonald's®",
+      "angebot": "2FÜR1 PORTION 6 CHICKEN MCNUGGETS®",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a1ee5fc3-2e17-4592-84bf-a46ca82e86e0/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a1ee5fc3-2e17-4592-84bf-a46ca82e86e0/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a1ee5fc3-2e17-4592-84bf-a46ca82e86e0/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 13,
+      "id": "ee09d6c5-bc0a-4fc9-a550-2929c8b28731",
+      "firma": "Peaky Bausinger's Food and Passion",
+      "angebot": "2FÜR1 RISOTTO",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ee09d6c5-bc0a-4fc9-a550-2929c8b28731/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ee09d6c5-bc0a-4fc9-a550-2929c8b28731/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ee09d6c5-bc0a-4fc9-a550-2929c8b28731/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 14,
+      "id": "0f5c699c-42d3-4940-bc1e-5fe1516a5663",
+      "firma": "Pizza-Kurier Sportivo",
+      "angebot": "2FÜR1 MITTAGSMENÜ",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0f5c699c-42d3-4940-bc1e-5fe1516a5663/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0f5c699c-42d3-4940-bc1e-5fe1516a5663/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0f5c699c-42d3-4940-bc1e-5fe1516a5663/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 15,
+      "id": "d2d1ab5c-b2c0-47c5-b67d-da41555615ea",
+      "firma": "Restaurant Chalet",
+      "angebot": "2FÜR1 DESSERT",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d2d1ab5c-b2c0-47c5-b67d-da41555615ea/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d2d1ab5c-b2c0-47c5-b67d-da41555615ea/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d2d1ab5c-b2c0-47c5-b67d-da41555615ea/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 16,
+      "id": "b3b03f44-8ee8-41bb-a77d-eebf55242421",
+      "firma": "Restaurant Rössli",
+      "angebot": "2FÜR1 PIZZA ODER PASTA",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b3b03f44-8ee8-41bb-a77d-eebf55242421/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b3b03f44-8ee8-41bb-a77d-eebf55242421/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b3b03f44-8ee8-41bb-a77d-eebf55242421/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 17,
+      "id": "7cc9d233-921a-4773-8701-689117a35efe",
+      "firma": "Restaurant Seegarten",
+      "angebot": "2FÜR1 HAUPTGANG IM À-LA-CARTE-RESTAURANT",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/7cc9d233-921a-4773-8701-689117a35efe/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/7cc9d233-921a-4773-8701-689117a35efe/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/7cc9d233-921a-4773-8701-689117a35efe/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 18,
+      "id": "5cacd7e5-62f7-40f5-9049-55897c3855bd",
+      "firma": "Restaurant Sichternhof",
+      "angebot": "2FÜR1 DESSERT",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5cacd7e5-62f7-40f5-9049-55897c3855bd/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5cacd7e5-62f7-40f5-9049-55897c3855bd/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5cacd7e5-62f7-40f5-9049-55897c3855bd/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 19,
+      "id": "1f970711-615a-41d5-b978-266015a80e42",
+      "firma": "Rinaco Bar",
+      "angebot": "2FÜR1 FLAMMKUCHEN",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1f970711-615a-41d5-b978-266015a80e42/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1f970711-615a-41d5-b978-266015a80e42/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1f970711-615a-41d5-b978-266015a80e42/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 20,
+      "id": "88ac2513-7fea-48d2-a7e3-171bda72bd33",
+      "firma": "Ristorante Pizzeria La Palma",
+      "angebot": "2für1 MITTAGSMENÜ",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/88ac2513-7fea-48d2-a7e3-171bda72bd33/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/88ac2513-7fea-48d2-a7e3-171bda72bd33/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/88ac2513-7fea-48d2-a7e3-171bda72bd33/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 21,
+      "id": "426ecb51-6e5f-46c8-8011-646aba2b2a0a",
+      "firma": "Sissacherfluh",
+      "angebot": "2FÜR1 DESSERT MIT KAFFEE",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/426ecb51-6e5f-46c8-8011-646aba2b2a0a/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/426ecb51-6e5f-46c8-8011-646aba2b2a0a/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/426ecb51-6e5f-46c8-8011-646aba2b2a0a/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 22,
+      "id": "24f44603-2b58-4525-9e32-0e895c084c99",
+      "firma": "sports ZUGERLAND AG",
+      "angebot": "2FÜR1 FONDUE IM WALLISER CHÄSSTÜBLI",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/24f44603-2b58-4525-9e32-0e895c084c99/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/24f44603-2b58-4525-9e32-0e895c084c99/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/24f44603-2b58-4525-9e32-0e895c084c99/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 23,
+      "id": "ee7262b2-423b-4ee6-b9d0-b261238683cb",
+      "firma": "Tapeó / Brasserie Ziegelhof",
+      "angebot": "2FÜR1 GEMISCHTE TAPAS PLATTE «PLATO DE DON ANTONIO»",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ee7262b2-423b-4ee6-b9d0-b261238683cb/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ee7262b2-423b-4ee6-b9d0-b261238683cb/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ee7262b2-423b-4ee6-b9d0-b261238683cb/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 24,
+      "id": "b128039d-4585-4f80-b19e-b9dbd5d86eca",
+      "firma": "Tender & Loins Steakhouse",
+      "angebot": "2FÜR1 TAGESAPERO (EXOTIC SPRITZ, HUGO, APEROL SPRITZ)",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b128039d-4585-4f80-b19e-b9dbd5d86eca/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b128039d-4585-4f80-b19e-b9dbd5d86eca/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b128039d-4585-4f80-b19e-b9dbd5d86eca/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 25,
+      "id": "1bf6192e-ca6f-4dce-bfb1-a3ae8185f494",
+      "firma": "The Burger by Tender and Loins",
+      "angebot": "2FÜR1 BURGER",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1bf6192e-ca6f-4dce-bfb1-a3ae8185f494/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1bf6192e-ca6f-4dce-bfb1-a3ae8185f494/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1bf6192e-ca6f-4dce-bfb1-a3ae8185f494/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 26,
+      "id": "176c55de-0da0-4eb7-834b-84a5230c4788",
+      "firma": "Villa Traumwerk",
+      "angebot": "2FÜR1 KAFFEE UND DAZU EINE HAUSGEMACHTE WAFFEL",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/176c55de-0da0-4eb7-834b-84a5230c4788/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/176c55de-0da0-4eb7-834b-84a5230c4788/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/176c55de-0da0-4eb7-834b-84a5230c4788/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 27,
+      "id": "1edb87ab-ec9c-4f76-b2e7-391c15d380ff",
+      "firma": "Ziegler Brot AG",
+      "angebot": "2FÜR1 KAFFEE MIT GIPFELI NACH WAHL",
+      "typ": "2für1",
+      "kategorie": "Essen & Trinken",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1edb87ab-ec9c-4f76-b2e7-391c15d380ff/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1edb87ab-ec9c-4f76-b2e7-391c15d380ff/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1edb87ab-ec9c-4f76-b2e7-391c15d380ff/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 28,
+      "id": "5e9c1540-b34d-474b-87a3-638144cecd40",
+      "firma": "KIK - Kultur im Keller",
+      "angebot": "2FÜR1 GETRÄNK",
+      "typ": "2für1",
+      "kategorie": "Ausgang & Nachtleben",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5e9c1540-b34d-474b-87a3-638144cecd40/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5e9c1540-b34d-474b-87a3-638144cecd40/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5e9c1540-b34d-474b-87a3-638144cecd40/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 29,
+      "id": "1c253f39-fdc1-4b26-8e53-2ea5821ef6c2",
+      "firma": "Lounge 11",
+      "angebot": "50 % RABATT AUF SHUFFLEBOARD SPIELEN",
+      "typ": "50% Rabatt",
+      "kategorie": "Ausgang & Nachtleben",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1c253f39-fdc1-4b26-8e53-2ea5821ef6c2/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1c253f39-fdc1-4b26-8e53-2ea5821ef6c2/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1c253f39-fdc1-4b26-8e53-2ea5821ef6c2/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 30,
+      "id": "6adae60f-7213-4485-a670-beeb3edbaeda",
+      "firma": "Oliver Twist Pub",
+      "angebot": "2FÜR1 GETRÄNK",
+      "typ": "2für1",
+      "kategorie": "Ausgang & Nachtleben",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6adae60f-7213-4485-a670-beeb3edbaeda/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6adae60f-7213-4485-a670-beeb3edbaeda/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6adae60f-7213-4485-a670-beeb3edbaeda/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 31,
+      "id": "4e701a19-3e87-4611-be89-863f11e92e4a",
+      "firma": "Tanznacht40",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Ausgang & Nachtleben",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/4e701a19-3e87-4611-be89-863f11e92e4a/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/4e701a19-3e87-4611-be89-863f11e92e4a/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/4e701a19-3e87-4611-be89-863f11e92e4a/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 32,
+      "id": "5bfaf7c8-304a-4d39-84aa-f0bc8aaecd2a",
+      "firma": "The Midtown Pub",
+      "angebot": "2FÜR1 PINT BIER",
+      "typ": "2für1",
+      "kategorie": "Ausgang & Nachtleben",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5bfaf7c8-304a-4d39-84aa-f0bc8aaecd2a/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5bfaf7c8-304a-4d39-84aa-f0bc8aaecd2a/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5bfaf7c8-304a-4d39-84aa-f0bc8aaecd2a/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 33,
+      "id": "92a3d7f8-a4c4-4781-b952-3a6ed98bef89",
+      "firma": "Aargauischer Rennverein",
+      "angebot": "2FÜR1 EINTRITT (STEHPLATZ)",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/92a3d7f8-a4c4-4781-b952-3a6ed98bef89/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/92a3d7f8-a4c4-4781-b952-3a6ed98bef89/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/92a3d7f8-a4c4-4781-b952-3a6ed98bef89/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 34,
+      "id": "ebd428ea-5abd-4558-b5b6-d9f1bb40f5f7",
+      "firma": "Billard Paradies AG Sprisse",
+      "angebot": "50 % RABATT AUF ALLE BOWLING- ODER BILLARDSPIELE",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ebd428ea-5abd-4558-b5b6-d9f1bb40f5f7/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ebd428ea-5abd-4558-b5b6-d9f1bb40f5f7/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ebd428ea-5abd-4558-b5b6-d9f1bb40f5f7/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 35,
+      "id": "c4f6c92c-9f3a-469b-8594-eb1443ea8b2c",
+      "firma": "CrossFit Sissach",
+      "angebot": "2FÜR1 EINZELEINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c4f6c92c-9f3a-469b-8594-eb1443ea8b2c/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c4f6c92c-9f3a-469b-8594-eb1443ea8b2c/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c4f6c92c-9f3a-469b-8594-eb1443ea8b2c/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 36,
+      "id": "fd23688a-c81d-45de-9378-ed42abe160fa",
+      "firma": "CrossFit Time Out",
+      "angebot": "2FÜR1 CROSSFIT-ABO FÜR 1 MONAT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fd23688a-c81d-45de-9378-ed42abe160fa/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fd23688a-c81d-45de-9378-ed42abe160fa/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fd23688a-c81d-45de-9378-ed42abe160fa/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 37,
+      "id": "74dc812f-416d-4e37-9792-c133123c49b3",
+      "firma": "Die Cinema 8 AG",
+      "angebot": "50 % RABATT AUF «HYPER VR»-SPIEL",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/74dc812f-416d-4e37-9792-c133123c49b3/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/74dc812f-416d-4e37-9792-c133123c49b3/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/74dc812f-416d-4e37-9792-c133123c49b3/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 38,
+      "id": "ef3c9e67-2482-4800-8ed2-15501703dfd7",
+      "firma": "Die Cinema 8 AG",
+      "angebot": "50 % RABATT AUF «KART» ODER «GAME OF KARTS»",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ef3c9e67-2482-4800-8ed2-15501703dfd7/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ef3c9e67-2482-4800-8ed2-15501703dfd7/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ef3c9e67-2482-4800-8ed2-15501703dfd7/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 39,
+      "id": "ced3e42f-aec5-4b36-a006-e80f7cdc436f",
+      "firma": "EHC Basel AG",
+      "angebot": "2FÜR1 EINZELTICKET",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ced3e42f-aec5-4b36-a006-e80f7cdc436f/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ced3e42f-aec5-4b36-a006-e80f7cdc436f/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ced3e42f-aec5-4b36-a006-e80f7cdc436f/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 40,
+      "id": "8f00fef3-9c22-41e2-90f1-9caef3fceeac",
+      "firma": "EHC Zunzgen-Sissach",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/8f00fef3-9c22-41e2-90f1-9caef3fceeac/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/8f00fef3-9c22-41e2-90f1-9caef3fceeac/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/8f00fef3-9c22-41e2-90f1-9caef3fceeac/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 41,
+      "id": "3fc8a8ee-0464-480f-8bd4-15fb6f3dd9f2",
+      "firma": "Enter Technikwelt Solothurn",
+      "angebot": "2FÜR1 TAGESPASS GANZE TECHNIKWELT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3fc8a8ee-0464-480f-8bd4-15fb6f3dd9f2/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3fc8a8ee-0464-480f-8bd4-15fb6f3dd9f2/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3fc8a8ee-0464-480f-8bd4-15fb6f3dd9f2/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 42,
+      "id": "f3aa138d-801a-4ea6-9dcb-15450b331b6a",
+      "firma": "Erlebniscenter Basel",
+      "angebot": "2FÜR1 EINTRITT INS SCHWARZLICHTMINIGOLF",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/f3aa138d-801a-4ea6-9dcb-15450b331b6a/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/f3aa138d-801a-4ea6-9dcb-15450b331b6a/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/f3aa138d-801a-4ea6-9dcb-15450b331b6a/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 43,
+      "id": "b0b0165f-10e0-45c9-9568-abc01a2543e2",
+      "firma": "EUROBUS AG",
+      "angebot": "2FÜR1 BUSFAHRT NACH LUINO ODER STRASBOURG",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b0b0165f-10e0-45c9-9568-abc01a2543e2/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b0b0165f-10e0-45c9-9568-abc01a2543e2/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b0b0165f-10e0-45c9-9568-abc01a2543e2/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 44,
+      "id": "403044f7-e3bd-443f-ae8f-87ea2d90916c",
+      "firma": "FC Basel 1893 AG",
+      "angebot": "2FÜR1 TICKET AN EINEM MEISTERSCHAFTSSPIEL DER FCB-FRAUEN",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/403044f7-e3bd-443f-ae8f-87ea2d90916c/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/403044f7-e3bd-443f-ae8f-87ea2d90916c/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/403044f7-e3bd-443f-ae8f-87ea2d90916c/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 45,
+      "id": "805cc102-cf65-4b69-a9a6-980e46e1bae8",
+      "firma": "FC Basel 1893 AG",
+      "angebot": "2FÜR1 TICKET AN EINEM MEISTERSCHAFTSSPIEL DER 1. MANNSCHAFT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/805cc102-cf65-4b69-a9a6-980e46e1bae8/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/805cc102-cf65-4b69-a9a6-980e46e1bae8/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/805cc102-cf65-4b69-a9a6-980e46e1bae8/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 46,
+      "id": "59cf46a4-0313-41cb-bdbb-fcd1b67e1fe6",
+      "firma": "Feldschlösschen Brauwelt",
+      "angebot": "2FÜR1 EINTRITT IN DIE FELSCHLÖSSCHEN BRAUWELT INKL. BIERDEGUSTATION",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/59cf46a4-0313-41cb-bdbb-fcd1b67e1fe6/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/59cf46a4-0313-41cb-bdbb-fcd1b67e1fe6/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/59cf46a4-0313-41cb-bdbb-fcd1b67e1fe6/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 47,
+      "id": "0ac6d635-87d3-48e7-bdeb-893000863427",
+      "firma": "Fitness Factory 24 GmbH",
+      "angebot": "2FÜR1 FITNESSABO FÜR 1 MONAT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0ac6d635-87d3-48e7-bdeb-893000863427/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0ac6d635-87d3-48e7-bdeb-893000863427/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0ac6d635-87d3-48e7-bdeb-893000863427/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 48,
+      "id": "279c3ed4-8b26-421b-9ef4-4c7417061856",
+      "firma": "Henker Museum Sissach",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/279c3ed4-8b26-421b-9ef4-4c7417061856/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/279c3ed4-8b26-421b-9ef4-4c7417061856/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/279c3ed4-8b26-421b-9ef4-4c7417061856/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 49,
+      "id": "77674017-1d65-47d8-b68d-6befdfac4e85",
+      "firma": "Hergiswiler Glas AG",
+      "angebot": "2FÜR1 SELBST EINE GLASKUGEL BLASEN",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/77674017-1d65-47d8-b68d-6befdfac4e85/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/77674017-1d65-47d8-b68d-6befdfac4e85/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/77674017-1d65-47d8-b68d-6befdfac4e85/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 50,
+      "id": "97edf0b2-fd0b-4cbd-ba68-42e840adc3dd",
+      "firma": "Jurapark Aargau",
+      "angebot": "50 % RABATT AUF DAS WANDERBUCH «JURAPARK AARGAU»",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/97edf0b2-fd0b-4cbd-ba68-42e840adc3dd/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/97edf0b2-fd0b-4cbd-ba68-42e840adc3dd/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/97edf0b2-fd0b-4cbd-ba68-42e840adc3dd/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 51,
+      "id": "00028aba-757f-45fe-91e4-e0efdaca4b04",
+      "firma": "Kartbahn Rheinfelden",
+      "angebot": "2FÜR1 AUF 2 TRAININGSFAHRTEN",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/00028aba-757f-45fe-91e4-e0efdaca4b04/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/00028aba-757f-45fe-91e4-e0efdaca4b04/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/00028aba-757f-45fe-91e4-e0efdaca4b04/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 52,
+      "id": "fe4ebb1c-a829-499d-8cd8-d70f64bdda49",
+      "firma": "Kartbahn Spreitenbach",
+      "angebot": "2FÜR1 KARTING",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fe4ebb1c-a829-499d-8cd8-d70f64bdda49/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fe4ebb1c-a829-499d-8cd8-d70f64bdda49/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fe4ebb1c-a829-499d-8cd8-d70f64bdda49/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 53,
+      "id": "2f061da1-9e6a-498d-a678-510bb63273d0",
+      "firma": "Kino Sputnik",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2f061da1-9e6a-498d-a678-510bb63273d0/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2f061da1-9e6a-498d-a678-510bb63273d0/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2f061da1-9e6a-498d-a678-510bb63273d0/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 54,
+      "id": "6dfad513-fdc7-4141-8ebf-5da8cecfc496",
+      "firma": "Kultur Marabu Gelterkinden",
+      "angebot": "2FÜR1 KINOEINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6dfad513-fdc7-4141-8ebf-5da8cecfc496/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6dfad513-fdc7-4141-8ebf-5da8cecfc496/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6dfad513-fdc7-4141-8ebf-5da8cecfc496/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 55,
+      "id": "3fc64742-831e-4df9-be38-e247e7378223",
+      "firma": "Liestal Tourismus",
+      "angebot": "2FÜR1 GEFÜHRTER STADTRUNDGANG IN LIESTAL",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3fc64742-831e-4df9-be38-e247e7378223/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3fc64742-831e-4df9-be38-e247e7378223/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3fc64742-831e-4df9-be38-e247e7378223/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 56,
+      "id": "758c6163-215e-42ef-8ffd-ddb37c4b91b1",
+      "firma": "Luftseilbahn Reigoldswil-Wasserfallen",
+      "angebot": "50 % RABATT AUF TROTTINETT-MIETE",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/758c6163-215e-42ef-8ffd-ddb37c4b91b1/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/758c6163-215e-42ef-8ffd-ddb37c4b91b1/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/758c6163-215e-42ef-8ffd-ddb37c4b91b1/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 57,
+      "id": "935374ac-5a3c-4145-a361-a0f70f2afb4e",
+      "firma": "Museum.BL",
+      "angebot": "2FÜR1 MUSEUMSEINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/935374ac-5a3c-4145-a361-a0f70f2afb4e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/935374ac-5a3c-4145-a361-a0f70f2afb4e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/935374ac-5a3c-4145-a361-a0f70f2afb4e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 58,
+      "id": "fcbe3a11-704e-49d1-ba94-fce4bd1db927",
+      "firma": "Play Padel Pratteln",
+      "angebot": "50 % RABATT AUF DIE PLATZMIETE AB 90 MINUTEN PADEL-TENNIS",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fcbe3a11-704e-49d1-ba94-fce4bd1db927/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fcbe3a11-704e-49d1-ba94-fce4bd1db927/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fcbe3a11-704e-49d1-ba94-fce4bd1db927/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 59,
+      "id": "ee248d6e-861e-4a37-a3e8-fa6399ed6531",
+      "firma": "RaceLounge.ch",
+      "angebot": "50 % RABATT AUF 2-3 STUNDEN RACING EXPERIENCE FÜR 1-6 PERSONEN",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ee248d6e-861e-4a37-a3e8-fa6399ed6531/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ee248d6e-861e-4a37-a3e8-fa6399ed6531/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ee248d6e-861e-4a37-a3e8-fa6399ed6531/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 60,
+      "id": "a3ae243f-cec1-439e-a193-d752df21829b",
+      "firma": "RAMSEIER ERLEBNISWELT",
+      "angebot": "2FÜR1 EINTRITT ERLEBNIS-RUNDGANG",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a3ae243f-cec1-439e-a193-d752df21829b/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a3ae243f-cec1-439e-a193-d752df21829b/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a3ae243f-cec1-439e-a193-d752df21829b/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 61,
+      "id": "2701fd07-02a1-4dce-b6da-34287904f6fa",
+      "firma": "Seilpark Balmberg",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2701fd07-02a1-4dce-b6da-34287904f6fa/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2701fd07-02a1-4dce-b6da-34287904f6fa/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2701fd07-02a1-4dce-b6da-34287904f6fa/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 62,
+      "id": "f32938f5-6986-4452-a9c7-7ecffce33333",
+      "firma": "sensorium",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/f32938f5-6986-4452-a9c7-7ecffce33333/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/f32938f5-6986-4452-a9c7-7ecffce33333/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/f32938f5-6986-4452-a9c7-7ecffce33333/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 63,
+      "id": "3ca5d1ed-38bf-4fb2-9ae2-38270d52da41",
+      "firma": "Sm'Aesch",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3ca5d1ed-38bf-4fb2-9ae2-38270d52da41/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3ca5d1ed-38bf-4fb2-9ae2-38270d52da41/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3ca5d1ed-38bf-4fb2-9ae2-38270d52da41/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 64,
+      "id": "432b9a28-7731-4ffc-a4e2-0c760fd242f7",
+      "firma": "Smilestones AG",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/432b9a28-7731-4ffc-a4e2-0c760fd242f7/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/432b9a28-7731-4ffc-a4e2-0c760fd242f7/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/432b9a28-7731-4ffc-a4e2-0c760fd242f7/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 65,
+      "id": "3f626188-f479-4a32-b48f-ef5396fe31ce",
+      "firma": "Sport Sissach AG",
+      "angebot": "4FÜR2 ODER 2FÜR1 EINTRITT KUNSTI ODER BADI SISSACH",
+      "typ": "4für2 oder 2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3f626188-f479-4a32-b48f-ef5396fe31ce/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3f626188-f479-4a32-b48f-ef5396fe31ce/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/3f626188-f479-4a32-b48f-ef5396fe31ce/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 66,
+      "id": "90a803fa-db84-4981-a1be-c3441cf0b1c1",
+      "firma": "Sport- und Volksbad Gitterli AG",
+      "angebot": "2FÜR1 GITTERLIBAD-POMMES",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/90a803fa-db84-4981-a1be-c3441cf0b1c1/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/90a803fa-db84-4981-a1be-c3441cf0b1c1/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/90a803fa-db84-4981-a1be-c3441cf0b1c1/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 67,
+      "id": "602e462e-90a2-41ee-a0d0-b4fc95ce8d3b",
+      "firma": "Sportcenter Bubendorf",
+      "angebot": "50 % RABATT AUF DIE PLATZMIETE FÜR EINE STUNDE TENNIS ODER BADMINTON",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/602e462e-90a2-41ee-a0d0-b4fc95ce8d3b/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/602e462e-90a2-41ee-a0d0-b4fc95ce8d3b/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/602e462e-90a2-41ee-a0d0-b4fc95ce8d3b/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 68,
+      "id": "22c2f2e3-d752-4211-a2cf-fe2a4ec1b957",
+      "firma": "sports ZUGERLAND AG",
+      "angebot": "2FÜR1 STUNDE MULTISPORT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/22c2f2e3-d752-4211-a2cf-fe2a4ec1b957/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/22c2f2e3-d752-4211-a2cf-fe2a4ec1b957/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/22c2f2e3-d752-4211-a2cf-fe2a4ec1b957/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 69,
+      "id": "74f0b988-ae27-432c-8143-9247696fa35c",
+      "firma": "Swiss Science Center Technorama",
+      "angebot": "2FÜR1 TAGESKARTE",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/74f0b988-ae27-432c-8143-9247696fa35c/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/74f0b988-ae27-432c-8143-9247696fa35c/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/74f0b988-ae27-432c-8143-9247696fa35c/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 70,
+      "id": "e9b4be32-c869-44fb-99df-3a2194d50e5d",
+      "firma": "Tenniscenter Ergolz",
+      "angebot": "50 % RABATT AUF EINE STUNDE TENNIS AM WOCHENENDE",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/e9b4be32-c869-44fb-99df-3a2194d50e5d/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/e9b4be32-c869-44fb-99df-3a2194d50e5d/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/e9b4be32-c869-44fb-99df-3a2194d50e5d/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 71,
+      "id": "efe9bea9-32c8-48ca-8c47-180ea21d90d3",
+      "firma": "Tennisclub Sissach",
+      "angebot": "50 % RABATT AUF JAHRESBEITRAG ODER 2 MITGLIEDSCHAFTEN FÜR 1",
+      "typ": "50% Rabatt oder 2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/efe9bea9-32c8-48ca-8c47-180ea21d90d3/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/efe9bea9-32c8-48ca-8c47-180ea21d90d3/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/efe9bea9-32c8-48ca-8c47-180ea21d90d3/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 72,
+      "id": "a8b92b3b-2126-4b3a-92db-3f244594efce",
+      "firma": "Topolino",
+      "angebot": "2FÜR1 EINTRITT TOPOLINO KINDERPARADIES",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a8b92b3b-2126-4b3a-92db-3f244594efce/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a8b92b3b-2126-4b3a-92db-3f244594efce/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a8b92b3b-2126-4b3a-92db-3f244594efce/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 73,
+      "id": "b04916a3-5b07-4f3d-b8e5-69bb3de3460f",
+      "firma": "Tourismus Rheinfelden",
+      "angebot": "2FÜR1 ÖFFENTLICHE STADTFÜHRUNG",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b04916a3-5b07-4f3d-b8e5-69bb3de3460f/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b04916a3-5b07-4f3d-b8e5-69bb3de3460f/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b04916a3-5b07-4f3d-b8e5-69bb3de3460f/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 74,
+      "id": "2c62359a-b695-404c-b93d-221da1b159b9",
+      "firma": "ueparties.ch",
+      "angebot": "2FÜR1 EINTRITT AN EINE Ü30 PARTY",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2c62359a-b695-404c-b93d-221da1b159b9/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2c62359a-b695-404c-b93d-221da1b159b9/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2c62359a-b695-404c-b93d-221da1b159b9/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 75,
+      "id": "1c3604da-b7ac-4282-b441-3be7ffeff1e7",
+      "firma": "Umwelt Arena Schweiz",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1c3604da-b7ac-4282-b441-3be7ffeff1e7/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1c3604da-b7ac-4282-b441-3be7ffeff1e7/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/1c3604da-b7ac-4282-b441-3be7ffeff1e7/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 76,
+      "id": "765531a2-b552-4cc8-9580-8ad47b2bf5cf",
+      "firma": "Unihockey Basel Regio",
+      "angebot": "2FÜR1 EINTRITT FÜR EIN HEIMSPIEL DER 1. MANNSCHAFT",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/765531a2-b552-4cc8-9580-8ad47b2bf5cf/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/765531a2-b552-4cc8-9580-8ad47b2bf5cf/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/765531a2-b552-4cc8-9580-8ad47b2bf5cf/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 77,
+      "id": "39808d16-7ed7-4ea2-9ecf-bb7c7ed03b5e",
+      "firma": "Verein Kinder-Camps",
+      "angebot": "50 % RABATT AUF TEILNAHME AM KINDER-CAMP FRENKENDORF/LIESTAL/SISSACH",
+      "typ": "50% Rabatt",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/39808d16-7ed7-4ea2-9ecf-bb7c7ed03b5e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/39808d16-7ed7-4ea2-9ecf-bb7c7ed03b5e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/39808d16-7ed7-4ea2-9ecf-bb7c7ed03b5e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 78,
+      "id": "c3892495-a0a5-428c-9e5f-990a81719017",
+      "firma": "Verein Zunzger Waldlauf",
+      "angebot": "2FÜR1 STARTNUMMER",
+      "typ": "2für1",
+      "kategorie": "Freizeit & Sport",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c3892495-a0a5-428c-9e5f-990a81719017/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c3892495-a0a5-428c-9e5f-990a81719017/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c3892495-a0a5-428c-9e5f-990a81719017/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 79,
+      "id": "bb0b68c2-f340-4c7d-82a1-946355b9aad0",
+      "firma": "ALSOLA Gesundheitspraxis",
+      "angebot": "50 % RABATT AUF DEINE BOWTECH® BEHANDLUNG",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/bb0b68c2-f340-4c7d-82a1-946355b9aad0/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/bb0b68c2-f340-4c7d-82a1-946355b9aad0/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/bb0b68c2-f340-4c7d-82a1-946355b9aad0/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 80,
+      "id": "2c48bc83-ce77-4224-b43d-9911c420700e",
+      "firma": "Atelier ZwygArt GmbH",
+      "angebot": "50 % RABATT AUF EIN BEWERBUNGSBILD",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2c48bc83-ce77-4224-b43d-9911c420700e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2c48bc83-ce77-4224-b43d-9911c420700e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2c48bc83-ce77-4224-b43d-9911c420700e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 81,
+      "id": "ebfda20f-7bb8-4a76-871f-b7c4818391a0",
+      "firma": "Bergladen Dietisberg",
+      "angebot": "2FÜR1 APFELRINGLI IM BERGLADEN",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ebfda20f-7bb8-4a76-871f-b7c4818391a0/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ebfda20f-7bb8-4a76-871f-b7c4818391a0/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/ebfda20f-7bb8-4a76-871f-b7c4818391a0/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 82,
+      "id": "0741d30e-1624-45a9-a9df-83812f236caf",
+      "firma": "Blumen Pasadena",
+      "angebot": "50 % AUF EIN BLUMENBOUQUET BIS 50 CHF",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0741d30e-1624-45a9-a9df-83812f236caf/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0741d30e-1624-45a9-a9df-83812f236caf/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0741d30e-1624-45a9-a9df-83812f236caf/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 83,
+      "id": "74fc961a-b84c-4974-9a25-d1efdcc5eb0c",
+      "firma": "Bordstein-Druck GmbH",
+      "angebot": "50 % RABATT AUF EINE BESTELLUNG IM WEBSHOP BIS WARENWERT 100 CHF",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/74fc961a-b84c-4974-9a25-d1efdcc5eb0c/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/74fc961a-b84c-4974-9a25-d1efdcc5eb0c/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/74fc961a-b84c-4974-9a25-d1efdcc5eb0c/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 84,
+      "id": "b64fcdca-5b54-4c55-82f8-535b2c7183fc",
+      "firma": "Bugmann Velos und Mofas",
+      "angebot": "50 % RABATT AUF VELO-SERVICE",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b64fcdca-5b54-4c55-82f8-535b2c7183fc/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b64fcdca-5b54-4c55-82f8-535b2c7183fc/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b64fcdca-5b54-4c55-82f8-535b2c7183fc/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 85,
+      "id": "5fe1ba6d-3fc6-4e06-9b27-08c16c6d3657",
+      "firma": "Central-Apotheke",
+      "angebot": "2FÜR1 HAUSSPEZIALITÄT",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5fe1ba6d-3fc6-4e06-9b27-08c16c6d3657/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5fe1ba6d-3fc6-4e06-9b27-08c16c6d3657/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/5fe1ba6d-3fc6-4e06-9b27-08c16c6d3657/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 86,
+      "id": "d091159a-ce52-403d-9ed5-8a0902675260",
+      "firma": "Da Sabatino",
+      "angebot": "2FÜR1 PESTO",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d091159a-ce52-403d-9ed5-8a0902675260/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d091159a-ce52-403d-9ed5-8a0902675260/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d091159a-ce52-403d-9ed5-8a0902675260/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 87,
+      "id": "947bb9d2-2cb3-4186-8723-975c8243e131",
+      "firma": "Daniel Krois Chocolatier",
+      "angebot": "2FÜR1 SCHOKOLADENTAFEL ODER 2FÜR1 KAFFEE",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/947bb9d2-2cb3-4186-8723-975c8243e131/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/947bb9d2-2cb3-4186-8723-975c8243e131/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/947bb9d2-2cb3-4186-8723-975c8243e131/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 88,
+      "id": "687fff4d-1990-4d93-8374-949a9293f8d5",
+      "firma": "FCB Fanshop St. Jakob-Park",
+      "angebot": "2FÜR1 PACKUNG FC BASEL KAFFI 250 GRAMM",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/687fff4d-1990-4d93-8374-949a9293f8d5/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/687fff4d-1990-4d93-8374-949a9293f8d5/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/687fff4d-1990-4d93-8374-949a9293f8d5/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 89,
+      "id": "593956f5-ac68-4e27-a8d9-58138983c73f",
+      "firma": "floorball-store.ch – Pratteln",
+      "angebot": "50 % RABATT",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/593956f5-ac68-4e27-a8d9-58138983c73f/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/593956f5-ac68-4e27-a8d9-58138983c73f/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/593956f5-ac68-4e27-a8d9-58138983c73f/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 90,
+      "id": "eb82a992-8739-4a38-b70a-1a85d589bf2f",
+      "firma": "GnussWärch Spezialitäten & Bistro",
+      "angebot": "2FÜR1 GETRÄNK",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/eb82a992-8739-4a38-b70a-1a85d589bf2f/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/eb82a992-8739-4a38-b70a-1a85d589bf2f/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/eb82a992-8739-4a38-b70a-1a85d589bf2f/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 91,
+      "id": "04ba461c-6ab6-49e2-b3f7-3fc014d84518",
+      "firma": "Grünmachen Kulinarik",
+      "angebot": "2FÜR1 ERDBEER MOUSSEUX",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/04ba461c-6ab6-49e2-b3f7-3fc014d84518/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/04ba461c-6ab6-49e2-b3f7-3fc014d84518/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/04ba461c-6ab6-49e2-b3f7-3fc014d84518/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 92,
+      "id": "6a3795a2-e41b-4da3-84fb-09895cc02f8e",
+      "firma": "Heinke Torpus",
+      "angebot": "2FÜR1 ODER 50 % RABATT AUF EINE PORTRAIT-HANDZEICHNUNG",
+      "typ": "2für1 oder 50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6a3795a2-e41b-4da3-84fb-09895cc02f8e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6a3795a2-e41b-4da3-84fb-09895cc02f8e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6a3795a2-e41b-4da3-84fb-09895cc02f8e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 93,
+      "id": "b8fdb51a-b9f0-4e8d-800f-c32fd923c764",
+      "firma": "Hotel Bad Eptingen",
+      "angebot": "2FÜR1 ÜBERNACHTUNG",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b8fdb51a-b9f0-4e8d-800f-c32fd923c764/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b8fdb51a-b9f0-4e8d-800f-c32fd923c764/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b8fdb51a-b9f0-4e8d-800f-c32fd923c764/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 94,
+      "id": "0015bfa3-1423-4c9a-ad53-796fba5b7fbf",
+      "firma": "Import Optik",
+      "angebot": "50 % AUF EINE PROFESSIONELLE AUGENANALYSE (SEHTEST)",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0015bfa3-1423-4c9a-ad53-796fba5b7fbf/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0015bfa3-1423-4c9a-ad53-796fba5b7fbf/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0015bfa3-1423-4c9a-ad53-796fba5b7fbf/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 95,
+      "id": "59c10f0f-96b2-4e60-92ba-e2f71ae21ff3",
+      "firma": "knecht reisen ag",
+      "angebot": "50 % ODER MAX. 100 CHF RABATT AUF DIE AUFTRAGSPAUSCHALE",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/59c10f0f-96b2-4e60-92ba-e2f71ae21ff3/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/59c10f0f-96b2-4e60-92ba-e2f71ae21ff3/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/59c10f0f-96b2-4e60-92ba-e2f71ae21ff3/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 96,
+      "id": "84cb33b9-ceee-4b1c-8c2c-a47be16b8538",
+      "firma": "Koppelmann Optik und Akustik",
+      "angebot": "50 % RABATT AUF EINEN SEHTEST (REFRAKTION)",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/84cb33b9-ceee-4b1c-8c2c-a47be16b8538/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/84cb33b9-ceee-4b1c-8c2c-a47be16b8538/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/84cb33b9-ceee-4b1c-8c2c-a47be16b8538/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 97,
+      "id": "f03ed70d-f3d5-4f4f-808a-d48e094841c6",
+      "firma": "Koppelmann Optik und Akustik",
+      "angebot": "50 % RABATT AUF SCHWIMM-GEHÖRSCHÜTZE",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/f03ed70d-f3d5-4f4f-808a-d48e094841c6/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/f03ed70d-f3d5-4f4f-808a-d48e094841c6/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/f03ed70d-f3d5-4f4f-808a-d48e094841c6/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 98,
+      "id": "05b2f7d4-9178-4c41-bad3-a4d1f896261c",
+      "firma": "Kreher Camping Shop GmbH",
+      "angebot": "50 % AUF FEUERWERK UND CAMPINGARTIKEL",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/05b2f7d4-9178-4c41-bad3-a4d1f896261c/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/05b2f7d4-9178-4c41-bad3-a4d1f896261c/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/05b2f7d4-9178-4c41-bad3-a4d1f896261c/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 99,
+      "id": "6c4a4ab2-c7b7-4404-9118-2838d8f30d57",
+      "firma": "Lindenapotheke",
+      "angebot": "2FÜR1 LINDOLINO SONNENCREME",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6c4a4ab2-c7b7-4404-9118-2838d8f30d57/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6c4a4ab2-c7b7-4404-9118-2838d8f30d57/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/6c4a4ab2-c7b7-4404-9118-2838d8f30d57/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 100,
+      "id": "d38bc7b4-b98d-45d7-bee0-5e941932ae94",
+      "firma": "Mahler & Co. AG",
+      "angebot": "50 % AUF BISCUITS & TEE GESCHENKSET",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d38bc7b4-b98d-45d7-bee0-5e941932ae94/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d38bc7b4-b98d-45d7-bee0-5e941932ae94/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d38bc7b4-b98d-45d7-bee0-5e941932ae94/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 101,
+      "id": "52b4718f-cc2c-4f0f-be6e-e0d8e0a6f210",
+      "firma": "Mauri's Salatsaucen GmbH",
+      "angebot": "2FÜR1 FEIGENSENF SALATSAUCE",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/52b4718f-cc2c-4f0f-be6e-e0d8e0a6f210/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/52b4718f-cc2c-4f0f-be6e-e0d8e0a6f210/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/52b4718f-cc2c-4f0f-be6e-e0d8e0a6f210/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 102,
+      "id": "fc4e33a2-33f7-49e1-aa05-598d45c7c0a6",
+      "firma": "Memory-Power",
+      "angebot": "2FÜR1 KLANGSCHALEN MASSAGE/THERAPIE",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fc4e33a2-33f7-49e1-aa05-598d45c7c0a6/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fc4e33a2-33f7-49e1-aa05-598d45c7c0a6/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fc4e33a2-33f7-49e1-aa05-598d45c7c0a6/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 103,
+      "id": "dc4d564f-5367-4e17-9029-3da264660a5d",
+      "firma": "Metzgerei Zimmermann",
+      "angebot": "4für2 CERVELAT",
+      "typ": "4für2",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/dc4d564f-5367-4e17-9029-3da264660a5d/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/dc4d564f-5367-4e17-9029-3da264660a5d/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/dc4d564f-5367-4e17-9029-3da264660a5d/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 104,
+      "id": "2a557b32-8473-4258-8d51-0d570f34845f",
+      "firma": "Mineralquelle Eptingen AG",
+      "angebot": "8FÜR4 PACK EPTINGER 1.5 LITER PET",
+      "typ": "8für4",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2a557b32-8473-4258-8d51-0d570f34845f/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2a557b32-8473-4258-8d51-0d570f34845f/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/2a557b32-8473-4258-8d51-0d570f34845f/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 105,
+      "id": "d6a1b0ee-2017-4e26-8f4f-768110300488",
+      "firma": "muff haushalt ag",
+      "angebot": "50 % RABATT AUF EIN MICROPLANE GOURMET SET",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d6a1b0ee-2017-4e26-8f4f-768110300488/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d6a1b0ee-2017-4e26-8f4f-768110300488/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d6a1b0ee-2017-4e26-8f4f-768110300488/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 106,
+      "id": "81b111ae-f1de-4a9a-ac9f-c0794bd1a81a",
+      "firma": "nad-in",
+      "angebot": "2FÜR1 STUNDE PERSÖNLICHES ORDNUNGSCOACHING",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/81b111ae-f1de-4a9a-ac9f-c0794bd1a81a/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/81b111ae-f1de-4a9a-ac9f-c0794bd1a81a/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/81b111ae-f1de-4a9a-ac9f-c0794bd1a81a/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 107,
+      "id": "88d48068-86a5-48bd-82c0-db62d138faa4",
+      "firma": "Natürlich Berger",
+      "angebot": "2FÜR1 HAUSSPEZIALITÄT",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/88d48068-86a5-48bd-82c0-db62d138faa4/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/88d48068-86a5-48bd-82c0-db62d138faa4/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/88d48068-86a5-48bd-82c0-db62d138faa4/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 108,
+      "id": "56356fb2-31f6-4d07-83fc-19c06b09871b",
+      "firma": "paf.ch GmbH",
+      "angebot": "2FÜR1 FLASCHE WEIN PUGLIA BIANCO IGP",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/56356fb2-31f6-4d07-83fc-19c06b09871b/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/56356fb2-31f6-4d07-83fc-19c06b09871b/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/56356fb2-31f6-4d07-83fc-19c06b09871b/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 109,
+      "id": "c9dff099-b13f-447d-a300-73d47433612b",
+      "firma": "Pfaff Papeterie, Bücher, Bürobedarf, Möbel",
+      "angebot": "2FÜR1 LEITZ NOTIZBUCH COSY A5, LINIERT, 90G GRAU",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c9dff099-b13f-447d-a300-73d47433612b/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c9dff099-b13f-447d-a300-73d47433612b/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/c9dff099-b13f-447d-a300-73d47433612b/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 110,
+      "id": "a43f127a-37bd-47ee-9221-10d2ca5e02e9",
+      "firma": "Saladin Photography",
+      "angebot": "50 % RABATT AUF EIN SHOOTING PAKET",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a43f127a-37bd-47ee-9221-10d2ca5e02e9/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a43f127a-37bd-47ee-9221-10d2ca5e02e9/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/a43f127a-37bd-47ee-9221-10d2ca5e02e9/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 111,
+      "id": "98f1924b-d487-4ef9-8525-a0a7a0ed26ee",
+      "firma": "sBluemelädeli Mumenthaler",
+      "angebot": "50 % RABATT",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/98f1924b-d487-4ef9-8525-a0a7a0ed26ee/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/98f1924b-d487-4ef9-8525-a0a7a0ed26ee/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/98f1924b-d487-4ef9-8525-a0a7a0ed26ee/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 112,
+      "id": "b129f658-b263-4ccf-9e6c-0c1d7ee331f7",
+      "firma": "Schaub Medien AG «Volksstimme»",
+      "angebot": "50 % RABATT AUF «VOLKSSTIMME»-SCHNUPPERABO ODER AUF EINEN BILDKALENDER 2027",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b129f658-b263-4ccf-9e6c-0c1d7ee331f7/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b129f658-b263-4ccf-9e6c-0c1d7ee331f7/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b129f658-b263-4ccf-9e6c-0c1d7ee331f7/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 113,
+      "id": "0b093a31-b7c2-4a76-ae1e-af0939ee3242",
+      "firma": "Schweizer Reinigung AG",
+      "angebot": "50 % RABATT AUF ALLE REINIGUNGSDIENSTLEISTUNGEN",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0b093a31-b7c2-4a76-ae1e-af0939ee3242/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0b093a31-b7c2-4a76-ae1e-af0939ee3242/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/0b093a31-b7c2-4a76-ae1e-af0939ee3242/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 114,
+      "id": "842a9bf1-5419-41e8-a48d-122a9c687f6e",
+      "firma": "Steinmühle Thommen",
+      "angebot": "2FÜR1 BIO-URDINKEL-KERNOTTO (1 KG)",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/842a9bf1-5419-41e8-a48d-122a9c687f6e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/842a9bf1-5419-41e8-a48d-122a9c687f6e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/842a9bf1-5419-41e8-a48d-122a9c687f6e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 115,
+      "id": "988d9032-c195-4440-a8ed-54704467a87e",
+      "firma": "Strichcode Apotheke",
+      "angebot": "2FÜR1 TEE",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/988d9032-c195-4440-a8ed-54704467a87e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/988d9032-c195-4440-a8ed-54704467a87e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/988d9032-c195-4440-a8ed-54704467a87e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 116,
+      "id": "9b63c422-05d5-48b7-8fa7-cd8c210ecc8e",
+      "firma": "Villa Traumwerk",
+      "angebot": "50 % RABATT AUF EINEN BLUMENSTRAUSS BIS 40 CHF",
+      "typ": "50% Rabatt",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/9b63c422-05d5-48b7-8fa7-cd8c210ecc8e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/9b63c422-05d5-48b7-8fa7-cd8c210ecc8e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/9b63c422-05d5-48b7-8fa7-cd8c210ecc8e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 117,
+      "id": "9e77a569-8025-470e-8b55-d2552c0985f8",
+      "firma": "WOLLARE",
+      "angebot": "2FÜR1 WOLLEKNÄUEL",
+      "typ": "2für1",
+      "kategorie": "Einkaufen & Dienstleistungen",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/9e77a569-8025-470e-8b55-d2552c0985f8/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/9e77a569-8025-470e-8b55-d2552c0985f8/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/9e77a569-8025-470e-8b55-d2552c0985f8/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 118,
+      "id": "d8459359-f890-4508-a016-6ac8c05b897f",
+      "firma": "aboutnails & more",
+      "angebot": "50 % RABATT AUF GEL-NÄGEL",
+      "typ": "50% Rabatt",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d8459359-f890-4508-a016-6ac8c05b897f/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d8459359-f890-4508-a016-6ac8c05b897f/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d8459359-f890-4508-a016-6ac8c05b897f/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 119,
+      "id": "cb7afc57-67b5-46cb-9b34-2f15ed914834",
+      "firma": "aquabasilea AG",
+      "angebot": "2FÜR1 TAGESEINTRITT HAMAM INKLUSIVE BAD UND SAUNA",
+      "typ": "2für1",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/cb7afc57-67b5-46cb-9b34-2f15ed914834/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/cb7afc57-67b5-46cb-9b34-2f15ed914834/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/cb7afc57-67b5-46cb-9b34-2f15ed914834/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 120,
+      "id": "541e6001-217c-4c79-9f04-88b0a5b65562",
+      "firma": "Atelier ZwygArt GmbH",
+      "angebot": "50 % RABATT AUF EIN TAGES-MAKE-UP",
+      "typ": "50% Rabatt",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/541e6001-217c-4c79-9f04-88b0a5b65562/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/541e6001-217c-4c79-9f04-88b0a5b65562/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/541e6001-217c-4c79-9f04-88b0a5b65562/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 121,
+      "id": "d77709d1-5b31-4dc5-9b93-92cac97f59f3",
+      "firma": "Atelier ZwygArt GmbH",
+      "angebot": "50 % RABATT AUF DEINEN HAARSCHNITT",
+      "typ": "50% Rabatt",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d77709d1-5b31-4dc5-9b93-92cac97f59f3/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d77709d1-5b31-4dc5-9b93-92cac97f59f3/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/d77709d1-5b31-4dc5-9b93-92cac97f59f3/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 122,
+      "id": "8e41a3d0-b1b4-4c7a-86fe-06ae1909845b",
+      "firma": "Fitness Factory 24 GmbH",
+      "angebot": "50 % RABATT AUF RÜCKEN- UND NACKENMASSAGE",
+      "typ": "50% Rabatt",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/8e41a3d0-b1b4-4c7a-86fe-06ae1909845b/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/8e41a3d0-b1b4-4c7a-86fe-06ae1909845b/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/8e41a3d0-b1b4-4c7a-86fe-06ae1909845b/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 123,
+      "id": "b127d4cd-d817-4e6d-80f5-edbceaba405d",
+      "firma": "Massage Praxis Bühler",
+      "angebot": "50 % RABATT AUF MASSAGE NACH WAHL",
+      "typ": "50% Rabatt",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b127d4cd-d817-4e6d-80f5-edbceaba405d/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b127d4cd-d817-4e6d-80f5-edbceaba405d/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/b127d4cd-d817-4e6d-80f5-edbceaba405d/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 124,
+      "id": "33f6da99-cc4a-4a2c-b5f5-47aa35537376",
+      "firma": "Shambala",
+      "angebot": "50 % RABATT AUF ALLE GETRÄNKE",
+      "typ": "50% Rabatt",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/33f6da99-cc4a-4a2c-b5f5-47aa35537376/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/33f6da99-cc4a-4a2c-b5f5-47aa35537376/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/33f6da99-cc4a-4a2c-b5f5-47aa35537376/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 125,
+      "id": "7307c041-3111-4d28-8011-45965e712598",
+      "firma": "skin care factory",
+      "angebot": "50 % RABATT AUF HYDRAFACIALS",
+      "typ": "50% Rabatt",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/7307c041-3111-4d28-8011-45965e712598/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/7307c041-3111-4d28-8011-45965e712598/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/7307c041-3111-4d28-8011-45965e712598/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 126,
+      "id": "4c261e7b-4c7b-4f96-8967-40480ae1c677",
+      "firma": "sole uno Wellness-Welt in Rheinfelden",
+      "angebot": "2FÜR1 EINTRITT",
+      "typ": "2für1",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/4c261e7b-4c7b-4f96-8967-40480ae1c677/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/4c261e7b-4c7b-4f96-8967-40480ae1c677/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/4c261e7b-4c7b-4f96-8967-40480ae1c677/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 127,
+      "id": "fbbf4396-9939-48a5-931a-c87522bc923c",
+      "firma": "Therme Zurzach",
+      "angebot": "2FÜR1 TAGESEINTRITT «EIN UND ALLES»",
+      "typ": "2für1",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fbbf4396-9939-48a5-931a-c87522bc923c/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fbbf4396-9939-48a5-931a-c87522bc923c/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/fbbf4396-9939-48a5-931a-c87522bc923c/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    },
+    {
+      "nr": 128,
+      "id": "4df07800-c537-4b96-831d-7368b5f6953e",
+      "firma": "Tinabella",
+      "angebot": "50 % RABATT AUF NEUMODELLAGE GEL OHNE VERLÄNGERUNG",
+      "typ": "50% Rabatt",
+      "kategorie": "Wellness & Beauty",
+      "fotos": [
+        {
+          "url": "https://2f1.ch/api/v1/voucher/4df07800-c537-4b96-831d-7368b5f6953e/complete-image?size=10",
+          "typ": "Angebotsbild"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/4df07800-c537-4b96-831d-7368b5f6953e/front-image?size=30",
+          "typ": "Vorderseite"
+        },
+        {
+          "url": "https://2f1.ch/api/v1/voucher/4df07800-c537-4b96-831d-7368b5f6953e/back-image?size=30",
+          "typ": "Rückseite"
+        }
+      ]
+    }
+  ],
+  "region": "Basel-Landschaft (Liestal & Oberes Baselbiet 2027)"
+}
