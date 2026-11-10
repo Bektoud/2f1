@@ -79,9 +79,12 @@ def main():
     assert "connect-src 'none'" in document.csp
     assert all(url.startswith(("#", "data:")) for url in document.resources), document.resources
     assert "https://2f1.ch" not in html
-    assert not re.search(r"\b(?:fetch|XMLHttpRequest|WebSocket|localStorage)\b", document.blocks["application-code"])
+    assert not re.search(r"\b(?:fetch|XMLHttpRequest|WebSocket)\b", document.blocks["application-code"])
+    assert "gutscheinbuch:design:v1" in document.blocks["theme-init"]
+    assert "const themeKey = 'gutscheinbuch:design:v1';" in document.blocks["application-code"]
     assert "@@" not in html
-    subprocess.run(["node", "--check"], input=document.blocks["application-code"], text=True, check=True)
+    for block in ("theme-init", "application-code"):
+        subprocess.run(["node", "--check"], input=document.blocks[block], text=True, check=True)
     print("OK: Alle 128 Angebote unverändert enthalten; IDs, Region, Schreibweise und Offline-Ressourcen geprüft.")
 
     counts = Counter()

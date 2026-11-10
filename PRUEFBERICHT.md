@@ -4,7 +4,7 @@
 
 **Ausgabedatei:** `index.html`
 
-**Grösse:** 32’858’066 Bytes (32,86 MB / 31,34 MiB)
+**Grösse:** 32’861’443 Bytes (32,86 MB / 31,34 MiB)
 
 ## Daten und Bildarchiv
 
@@ -31,10 +31,11 @@
 - Der technische Abschnitt zu Daten und Bildern steht in `README.md` und wurde aus dem Seitenfuss entfernt.
 - Vorschaubilder füllen ihre Bildfläche; die schmalen seitlichen Leerstreifen durch das bisherige Einpassen sind beseitigt. Die vollständigen Gutscheinseiten bleiben im Detailfenster einpassbar und vergrösserbar.
 - Die Highlights blättern alle fünf Sekunden automatisch weiter, einschliesslich Rückkehr zum ersten Angebot. Interaktion beendet die Automatik bis zum Neuladen; manuelles Blättern bleibt möglich.
+- Ein Umschalter im Kopfbereich wechselt jederzeit zwischen hellem und dunklem Design. Ohne eigene Wahl folgt die Seite dem Gerät; die bewusste Wahl wird als Darstellungseinstellung in `localStorage` gespeichert.
 
 ## Browserprüfungen
 
-**30 erfolgreiche Prüfgruppen**, jeweils 15 in:
+**32 erfolgreiche Prüfgruppen**, jeweils 16 in:
 
 - Chromium 158.0.8127.18
 - Firefox 159.0
@@ -68,7 +69,9 @@ Die Website wurde direkt über `file://` geöffnet; das Netzwerk des Browser-Kon
 | Liste leeren | Rückfrage, Abbrechen, bestätigtes Leeren, deaktivierter Export, Ansage der Änderung und leere Auswahl nach Neuladen |
 | Speicher-Fallback | Lesender und schreibender Zugriff auf blockiertes `sessionStorage` werfen Fehler; die Merkliste funktioniert dennoch im Arbeitsspeicher |
 | Responsive Layout | 320, 390, 768, 1024 und 1440 Pixel Breite; kein horizontaler Seitenüberlauf; beide Fenster auf schmalem Bildschirm |
-| Erscheinungsbild | Heller und dunkler Gerätemodus, einschliesslich Merkliste; Screenshots visuell geprüft |
+| Design-Umschalter | Wechsel per Maus und Tastatur; Zustandsanzeige, Symbol, Titel und `theme-color`; Speicherung in `localStorage` und Beibehaltung nach dem Neuladen |
+| Geräte-Design | Ohne eigene Wahl folgt die Seite unmittelbar der Geräteeinstellung; eine bewusste Wahl wird durch spätere Geräteänderungen nicht überschrieben |
+| Erscheinungsbild | Heller und dunkler Modus, einschliesslich Merkliste und Umschalter; Screenshots visuell geprüft |
 | Reduzierte Bewegung | `prefers-reduced-motion: reduce` deaktiviert automatisches Blättern, sanftes Scrollen der Seite und Highlights sowie Übergänge; Änderungen der Einstellung werden unmittelbar berücksichtigt |
 | Laufzeit/Offline | Keine externen HTTP(S)-Requests, keine JavaScript- oder Konsolenfehler; Gutscheinseiten werden erst bei Bedarf dekodiert |
 

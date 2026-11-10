@@ -4,11 +4,11 @@ Das Gutscheinbuch **Basel-Landschaft (Liestal & Oberes Baselbiet 2027)** als vol
 
 ## Website öffnen
 
-**[Vollständige index.html herunterladen](https://github.com/Bektoud/2f1/raw/refs/heads/main/index.html)** und im Browser öffnen. Ein Doppelklick auf die lokal gespeicherte Datei genügt.
+**[Website auf GitHub Pages öffnen](https://bektoud.github.io/2f1/)** oder **[index.html herunterladen](https://github.com/Bektoud/2f1/raw/refs/heads/main/index.html)** und lokal im Browser öffnen. Ein Doppelklick auf die gespeicherte Datei genügt.
 
 Die Website benötigt nur diese eine Datei: HTML, CSS, JavaScript, alle 128 Angebote und alle 381 unterschiedlichen, passend zugeordneten Bildinhalte sind darin eingebettet. Auch Merkliste und Textexport funktionieren offline.
 
-**Dateigrösse: 32’858’066 Bytes = 32,86 MB = 31,34 MiB.** Die schonende Bildqualität mit ungefähr 33 MB wurde ausdrücklich gewählt.
+**Dateigrösse: 32’861’443 Bytes = 32,86 MB = 31,34 MiB.** Die schonende Bildqualität mit ungefähr 33 MB wurde ausdrücklich gewählt.
 
 ## Funktionen
 
@@ -21,7 +21,8 @@ Die Website benötigt nur diese eine Datei: HTML, CSS, JavaScript, alle 128 Ange
 - Sitzungsbezogene Merkliste in `sessionStorage`, mit Arbeitsspeicher-Fallback bei blockiertem Speicher.
 - Gruppierte Merkliste mit Einzelentfernung, bestätigtem Leeren und `.txt`-Download.
 - UTF-8-Textexport mit BOM, Windows-Zeilenumbrüchen, Exportdatum und alphabetischer Sortierung innerhalb der Kategorien.
-- Responsive Gestaltung, Geräte-Hell-/Dunkelmodus, reduzierte Bewegung, Tastaturbedienung, Fokusführung und Live-Ansagen.
+- Responsive Gestaltung, Hell-/Dunkelmodus mit Umschalter im Kopfbereich, reduzierte Bewegung, Tastaturbedienung, Fokusführung und Live-Ansagen.
+- Der Design-Umschalter folgt ohne eigene Wahl dem Gerät und speichert eine bewusste Wahl im Browser.
 - Keine externen Laufzeitbibliotheken, Schriftdateien, Bilder oder Netzwerkanfragen.
 
 Die Angebotstexte behalten ihre Schreibweise. Auf den Übersichtskarten wird bei einfachen 2für1-/50-%-Deals das bereits separat gezeigte Präfix entfernt. Mischformen und Bedingungen wie «50 % ODER MAX. 100 CHF …» bleiben vollständig erhalten. Der Export verwendet immer die Originaltexte.
@@ -34,13 +35,17 @@ Die Auswahl und Zusatzangaben stehen in `src/highlights.json`. Die Karten wechse
 
 Ausserhalb des sichtbaren Bereichs, in einem inaktiven Tab und während geöffneter Dialogfenster pausiert die Automatik. Die Geräteeinstellung für reduzierte Bewegung deaktiviert sie. Automatische Wechsel lösen keine fortlaufenden Screenreader-Ansagen aus. Beim Ändern der Fensterbreite bleibt das ausgewählte Highlight sichtbar.
 
+### Design und Darstellung
+
+Im Kopfbereich schaltet ein runder Knopf jederzeit zwischen hellem und dunklem Design um. Ohne eigene Wahl folgt die Seite der Geräteeinstellung; eine Änderung des Gerätemodus wird unmittelbar übernommen. Die eigene Wahl wird als reine Darstellungseinstellung in `localStorage` gespeichert und überlebt das Neuladen. Die Merkliste bleibt davon getrennt und weiterhin auf die Tab-Sitzung beschränkt.
+
 ## Daten und Bilder
 
 Die Kategorien sind aus den Randfarben der Originalkarten abgeleitet: orange, blau, grün, gelb und pink. Die Namen «Essen & Trinken», «Ausgang & Nachtleben», «Freizeit & Sport», «Einkaufen & Dienstleistungen» und «Wellness & Beauty» sind die Interpretation der Quelldatei.
 
 Die Filter «2für1» und «50 % Rabatt» zählen jeweils nur die reine Angebotsart: 86 beziehungsweise 37 Angebote. Die fünf weiteren Angebote, darunter Kombinationen, 4für2 und 8für4, stehen unter «Weitere». Insgesamt sind 128 Angebote von 118 unterschiedlichen Firmen enthalten. Sämtliche Filterzahlen werden aus den Angebotsdaten berechnet.
 
-Technische Angaben zur Datenquelle, Bildzuordnung und Dateigrösse werden hier dokumentiert. Einzelheiten zu einem Gutschein stehen auf seiner Rückseite. Die Merkliste wird nur für die jeweilige Tab-Sitzung gespeichert und lässt sich mit «Als Text exportieren» als Datei sichern.
+Technische Angaben zur Datenquelle, Bildzuordnung und Dateigrösse werden hier dokumentiert. Einzelheiten zu einem Gutschein stehen auf seiner Rückseite. Die Merkliste wird nur für die jeweilige Tab-Sitzung gespeichert und lässt sich mit «Als Text exportieren» als Datei sichern. Einzige dauerhafte Speicherung ist die Design-Wahl in `localStorage`.
 
 ### Bildzuordnung und bestätigte Lücken
 

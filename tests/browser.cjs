@@ -164,9 +164,76 @@ async function testHighlightAutoplay(name, browser) {
   await context.close();
 }
 
+async function testTheme(name, browser) {
+  const context = await browser.newContext({ viewport: { width: 1440, height: 1080 }, colorScheme: 'light', reducedMotion: 'reduce' });
+  await context.setOffline(true);
+  const page = await context.newPage();
+  page.setDefaultTimeout(12000);
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+
+  const state = () => page.evaluate(() => ({
+    theme: document.documentElement.dataset.theme,
+    pressed: document.querySelector('#theme-toggle').getAttribute('aria-pressed'),
+    background: getComputedStyle(document.body).backgroundColor,
+    meta: document.querySelector('meta[name="theme-color"]').content,
+    title: document.querySelector('#theme-toggle').title,
+    sun: !document.querySelector('#theme-icon-light').hasAttribute('hidden'),
+    moon: !document.querySelector('#theme-icon-dark').hasAttribute('hidden'),
+    stored: localStorage.getItem('gutscheinbuch:design:v1')
+  }));
+  const expectState = async expected => {
+    await page.waitForFunction(expected => {
+      const node = document.documentElement;
+      return node.dataset.theme === expected.theme;
+    }, expected);
+    const actual = await state();
+    for (const [key, value] of Object.entries(expected)) assert.equal(actual[key], value, key);
+  };
+
+  await check(`${name}: Design-Umschalter wechselt Hell/Dunkel, speichert die Wahl und folgt sonst dem Gerät`, async () => {
+    await page.goto(url);
+    await page.waitForSelector('.offer-card');
+    await expectState({ theme: 'light', pressed: 'false', background: 'rgb(247, 246, 240)', meta: '#f7f6f0', title: 'Zu dunklem Design wechseln', sun: true, moon: false, stored: null });
+
+    await page.locator('#theme-toggle').click();
+    await expectState({ theme: 'dark', pressed: 'true', background: 'rgb(19, 27, 22)', meta: '#131b16', title: 'Zu hellem Design wechseln', sun: false, moon: true, stored: 'dark' });
+    await page.waitForFunction(() => [...document.querySelectorAll('[data-announcer]')].some(node => node.textContent.includes('Dunkles Design')));
+
+    await page.reload();
+    await page.waitForSelector('.offer-card');
+    await expectState({ theme: 'dark', pressed: 'true', stored: 'dark' });
+    await page.emulateMedia({ colorScheme: 'light' });
+    await page.waitForTimeout(100);
+    await expectState({ theme: 'dark', stored: 'dark' });
+
+    await page.locator('#theme-toggle').click();
+    await expectState({ theme: 'light', pressed: 'false', background: 'rgb(247, 246, 240)', meta: '#f7f6f0', stored: 'light' });
+    await page.reload();
+    await page.waitForSelector('.offer-card');
+    await expectState({ theme: 'light', pressed: 'false', stored: 'light' });
+
+    await page.evaluate(() => localStorage.removeItem('gutscheinbuch:design:v1'));
+    await page.emulateMedia({ colorScheme: 'dark' });
+    await page.reload();
+    await page.waitForSelector('.offer-card');
+    await expectState({ theme: 'dark', pressed: 'true', background: 'rgb(19, 27, 22)', stored: null });
+    await page.emulateMedia({ colorScheme: 'light' });
+    await page.waitForFunction(() => document.documentElement.dataset.theme === 'light');
+    await expectState({ theme: 'light', pressed: 'false', stored: null });
+
+    await page.locator('#theme-toggle').focus();
+    await page.keyboard.press('Space');
+    await expectState({ theme: 'dark', pressed: 'true', stored: 'dark' });
+    assert.deepEqual(errors, []);
+  });
+  await context.close();
+}
+
 async function testEngine(name, engine) {
   const browser = await engine.launch({ headless: true });
   console.log(`\n${name} ${browser.version()} – offline über file://`);
+  await testTheme(name, browser);
   await testHighlightAutoplay(name, browser);
   const context = await browser.newContext({ viewport: { width: 1440, height: 1080 }, colorScheme: 'light', reducedMotion: 'reduce', timezoneId: 'Europe/Zurich', acceptDownloads: true });
   // Direkter file://-Aufruf bei abgeschaltetem Netzwerk ist der tatsächliche Auslieferungsfall.

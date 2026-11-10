@@ -9,6 +9,15 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <meta name="description" content="Gutscheine für Basel-Landschaft: ausgewählte Angebote, eine vollständige Übersicht mit Filtern und eine Merkliste. Auch offline nutzbar.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='8' y='16' width='48' height='32' rx='6' fill='%23f7f6f0' stroke='%23264d39' stroke-width='4'/%3E%3Cpath d='M40 18v28' stroke='%23264d39' stroke-width='3' stroke-dasharray='4 4'/%3E%3C/svg%3E">
+  <script id="theme-init">
+    (() => {
+      const key = 'gutscheinbuch:design:v1';
+      let saved = null;
+      try { saved = window.localStorage.getItem(key); } catch {}
+      const systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : (systemDark ? 'dark' : 'light');
+    })();
+  </script>
   <title>Angebote – @@BOOK_TITLE@@</title>
   <style>
     :root {
@@ -64,14 +73,16 @@
     .btn-primary:hover:not(:disabled) { background: var(--brand); color: var(--on-brand); filter: brightness(1.12); }
     .icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 10px; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 50%; background: var(--surface); }
     .icon-btn:hover { background: var(--surface-soft); }
+    .theme-toggle { margin-left: 2px; }
+    .theme-toggle .icon { width: 19px; height: 19px; }
     .save-btn[aria-pressed="true"] { color: var(--heart); background: var(--heart-bg); border-color: var(--heart); }
     .save-btn[aria-pressed="true"] .icon { fill: currentColor; }
     .count { display: inline-grid; place-items: center; min-width: 25px; height: 25px; padding: 0 6px; font-size: .76rem; font-weight: 750; border-radius: 50px; background: var(--brand-soft); color: var(--ink); font-variant-numeric: tabular-nums; }
     .site-header { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
     .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 82px; gap: 24px; }
-    .edition-link { min-width: 0; text-decoration: none; }
-    .edition-region { display: block; color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; letter-spacing: -.035em; line-height: 1.3; }
-    .edition-meta { display: block; color: var(--muted); font-size: .7rem; margin-top: 3px; }
+    .edition-link { min-width: 0; overflow: hidden; text-decoration: none; }
+    .edition-region { display: block; color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; letter-spacing: -.035em; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .edition-meta { display: block; color: var(--muted); font-size: .7rem; margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .header-nav { display: flex; align-items: center; gap: 28px; margin-left: auto; margin-right: 22px; font-size: .85rem; font-weight: 600; }
     .header-nav a { text-decoration: none; }
     .header-nav a:hover { text-decoration: underline; }
@@ -273,8 +284,10 @@
       .header-nav { display: none; }
       .edition-region { font-size: 1.22rem; }
       .edition-meta { font-size: .64rem; }
+      .favorites-label { display: none; }
       .favorites-trigger { font-size: .78rem; gap: 8px; padding: 9px 11px; min-height: 43px; }
       .favorites-trigger > .icon { width: 18px; height: 18px; }
+      .theme-toggle { width: 42px; height: 42px; padding: 9px; }
       .section-heading { gap: 14px; align-items: start; }
       .highlights { padding-block: 29px 25px; }
       .highlights .section-heading { flex-direction: column; gap: 8px; margin-bottom: 15px; }
@@ -336,8 +349,8 @@
     @media (max-width: 430px) {
       .edition-region { font-size: 1.1rem; }
       .edition-area { display: none; }
-      .favorites-trigger { gap: 6px; }
-      .favorites-trigger > .icon { display: none; }
+      .favorites-trigger { gap: 6px; padding-inline: 10px; }
+      .theme-toggle { width: 40px; height: 40px; padding: 8px; }
       .highlight-pagination { display: none; }
       .offer-grid { grid-template-columns: minmax(0, 1fr); }
       .offer-copy { font-size: .8rem; }
@@ -354,22 +367,22 @@
       .confirm-content { padding: 24px; }
       #clear-dialog .dialog-footer { padding-inline: 24px; flex-wrap: wrap; }
     }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #131b16; --surface: #1b261e; --surface-soft: #243127; --ink: #e9eee0;
-        --text: #e0e6dc; --muted: #acb9ad; --line: #3d4c3f; --brand: #b6d8a8;
-        --on-brand: #173020; --brand-soft: #2c412e; --terracotta: #eda185;
-        --heart: #ffacc1; --heart-bg: #482735; --focus: #9cbbff;
-        --shadow: 0 12px 35px #0003; --modal-shadow: 0 24px 100px #0009;
-      }
-      .category-food { --cat: #f3ad82; --cat-bg: #412e23; --cat-line: #79513a; }
-      .category-night { --cat: #a5c4ff; --cat-bg: #25344d; --cat-line: #4d668e; }
-      .category-sport { --cat: #b3d799; --cat-bg: #2c3e26; --cat-line: #607b48; }
-      .category-shopping { --cat: #e9ce76; --cat-bg: #40371d; --cat-line: #807144; }
-      .category-wellness { --cat: #f2afd3; --cat-bg: #422c3b; --cat-line: #805b74; }
-      .ticket-visual { border-bottom-color: #74826d; }
-      dialog::backdrop { background: #060c09cc; }
+    :root[data-theme="light"] { color-scheme: light; }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #131b16; --surface: #1b261e; --surface-soft: #243127; --ink: #e9eee0;
+      --text: #e0e6dc; --muted: #acb9ad; --line: #3d4c3f; --brand: #b6d8a8;
+      --on-brand: #173020; --brand-soft: #2c412e; --terracotta: #eda185;
+      --heart: #ffacc1; --heart-bg: #482735; --focus: #9cbbff;
+      --shadow: 0 12px 35px #0003; --modal-shadow: 0 24px 100px #0009;
     }
+    :root[data-theme="dark"] .category-food { --cat: #f3ad82; --cat-bg: #412e23; --cat-line: #79513a; }
+    :root[data-theme="dark"] .category-night { --cat: #a5c4ff; --cat-bg: #25344d; --cat-line: #4d668e; }
+    :root[data-theme="dark"] .category-sport { --cat: #b3d799; --cat-bg: #2c3e26; --cat-line: #607b48; }
+    :root[data-theme="dark"] .category-shopping { --cat: #e9ce76; --cat-bg: #40371d; --cat-line: #807144; }
+    :root[data-theme="dark"] .category-wellness { --cat: #f2afd3; --cat-bg: #422c3b; --cat-line: #805b74; }
+    :root[data-theme="dark"] .ticket-visual { border-bottom-color: #74826d; }
+    :root[data-theme="dark"] dialog::backdrop { background: #060c09cc; }
     @media (prefers-reduced-motion: reduce) {
       html, .highlight-track { scroll-behavior: auto; }
       *, *::before, *::after { animation: none !important; transition: none !important; }
@@ -406,6 +419,8 @@
     <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
     <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
     <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.1"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.4 14.2A8.5 8.5 0 0 1 9.8 3.6 8.5 8.5 0 1 0 20.4 14.2Z"/></symbol>
   </svg>
 
   <header class="site-header">
@@ -418,9 +433,13 @@
         <a href="#highlights">Highlights</a>
         <a href="#angebote">Alle Angebote</a>
       </nav>
-      <button type="button" class="btn favorites-trigger" id="open-favorites" data-open-favorites aria-haspopup="dialog" aria-controls="favorites-dialog">
+      <button type="button" class="icon-btn theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Dunkles Design" title="Zu dunklem Design wechseln">
+        <svg class="icon" aria-hidden="true" id="theme-icon-light"><use href="#i-sun"/></svg>
+        <svg class="icon" aria-hidden="true" id="theme-icon-dark" hidden><use href="#i-moon"/></svg>
+      </button>
+      <button type="button" class="btn favorites-trigger" id="open-favorites" data-open-favorites aria-haspopup="dialog" aria-controls="favorites-dialog" aria-label="Merkliste">
         <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
-        Merkliste <span class="count" data-favorites-count>0</span>
+        <span class="favorites-label">Merkliste</span> <span class="count" data-favorites-count>0</span>
       </button>
     </div>
   </header>
@@ -540,6 +559,8 @@
     const collator = new Intl.Collator('de-CH', { sensitivity: 'base', numeric: true });
     const numberFormat = new Intl.NumberFormat('de-CH');
     const storageKey = `gutscheinbuch:${book.region}:merkliste:v1`;
+    const themeKey = 'gutscheinbuch:design:v1';
+    const themeMedia = window.matchMedia('(prefers-color-scheme: dark)');
     let storageAvailable = true;
     const favorites = loadFavorites();
     const filters = { category: 'all', deal: 'all', query: '', favoritesOnly: false };
@@ -632,6 +653,45 @@
       $('#session-info').textContent = storageAvailable
         ? 'Die Auswahl bleibt für diese Tab-Sitzung gespeichert und kann als Textdatei exportiert werden.'
         : 'Der Sitzungsspeicher ist nicht verfügbar. Die Auswahl geht beim Neuladen verloren und kann vorher als Textdatei exportiert werden.';
+    }
+
+    function storedTheme() {
+      try {
+        const value = window.localStorage.getItem(themeKey);
+        return value === 'light' || value === 'dark' ? value : null;
+      } catch {
+        return null;
+      }
+    }
+
+    function updateThemeControls() {
+      const dark = document.documentElement.dataset.theme === 'dark';
+      $$('meta[name="theme-color"]').forEach(meta => { meta.content = dark ? '#131b16' : '#f7f6f0'; });
+      const toggle = $('#theme-toggle');
+      toggle.setAttribute('aria-pressed', String(dark));
+      toggle.title = dark ? 'Zu hellem Design wechseln' : 'Zu dunklem Design wechseln';
+      $('#theme-icon-light').toggleAttribute('hidden', dark);
+      $('#theme-icon-dark').toggleAttribute('hidden', !dark);
+    }
+
+    function applyTheme(theme, persist) {
+      document.documentElement.dataset.theme = theme;
+      if (persist) {
+        try { window.localStorage.setItem(themeKey, theme); } catch {}
+      }
+      updateThemeControls();
+    }
+
+    function bindTheme() {
+      updateThemeControls();
+      $('#theme-toggle').addEventListener('click', () => {
+        const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        applyTheme(next, true);
+        announce(next === 'dark' ? 'Dunkles Design aktiviert.' : 'Helles Design aktiviert.');
+      });
+      themeMedia.addEventListener('change', event => {
+        if (!storedTheme()) applyTheme(event.matches ? 'dark' : 'light', false);
+      });
     }
 
     function announce(message) {
@@ -1143,6 +1203,7 @@
         announce('Die Merkliste wurde geleert.');
       });
       bindDialogs();
+      bindTheme();
       bindHighlightAutoplay();
     }
 
