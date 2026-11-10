@@ -127,15 +127,13 @@ def main():
             (args.samples / name).write_bytes(content)
     print("OK: 381 eingebettete Bilder vollständig dekodiert; genau die drei bestätigten Ersatz-Rückseiten.")
 
-    assert [group["name"] for group in highlights] == ["Familien", "Sportfans", "Geniesser", "Paare", "Freunde & Action", "Auszeit"]
+    assert [pick["nr"] for pick in highlights] == [126, 45, 119, 61, 17, 53, 103]
     by_id = {offer["id"]: offer for offer in book["angebote"]}
-    for group in highlights:
-        assert len(group["angebote"]) == 4
-        assert len({pick["id"] for pick in group["angebote"]}) == 4
-        for pick in group["angebote"]:
-            assert by_id[pick["id"]]["nr"] == pick["nr"]
-            assert pick["satz"].strip()
-    print("OK: Sechs Zielgruppen mit je vier gültigen Angeboten. JavaScript-Syntax fehlerfrei.")
+    assert len({pick["id"] for pick in highlights}) == 7
+    for pick in highlights:
+        assert by_id[pick["id"]]["nr"] == pick["nr"]
+        assert all(pick[field].strip() for field in ("ort", "leistung", "beschreibung", "einloesung", "gueltigkeit"))
+    print("OK: Sieben Highlights mit gültigen Angebotsverweisen und ergänzenden Angaben. JavaScript-Syntax fehlerfrei.")
     print(f"Endgrösse: {len(raw):,} Bytes / {len(raw) / 1_000_000:.2f} MB.")
 
 

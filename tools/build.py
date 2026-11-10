@@ -207,11 +207,10 @@ def build_website(source, images, report, *, prepare_only=False):
         return
     highlights = json.loads((ROOT / "src/highlights.json").read_text(encoding="utf-8"))
     offers_by_nr = {offer["nr"]: offer for offer in source["angebote"]}
-    assert len(highlights) == 6
-    for group in highlights:
-        assert len(group["angebote"]) == len({pick["nr"] for pick in group["angebote"]}) == 4
-        for pick in group["angebote"]:
-            pick["id"] = offers_by_nr[pick["nr"]]["id"]
+    assert highlights and len({pick["nr"] for pick in highlights}) == len(highlights)
+    for pick in highlights:
+        assert all(pick[field].strip() for field in ("ort", "leistung", "beschreibung", "einloesung", "gueltigkeit"))
+        pick["id"] = offers_by_nr[pick["nr"]]["id"]
     book_data = {
         "anzahl": source["anzahl"], "region": source["region"], "hinweis": source["hinweis"],
         "angebote": [{field: offer[field] for field in OFFER_FIELDS} for offer in source["angebote"]],

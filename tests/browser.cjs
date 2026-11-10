@@ -67,8 +67,107 @@ async function axe(page, label) {
   assert.deepEqual(issues, [], `Barrierefreiheitsfehler: ${label}`);
 }
 
+async function testHighlightAutoplay(name, browser) {
+  const context = await browser.newContext({ viewport: { width: 1440, height: 1080 }, reducedMotion: 'no-preference', hasTouch: true });
+  await context.setOffline(true);
+  const page = await context.newPage();
+  page.setDefaultTimeout(12000);
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.clock.install({ time: new Date('2026-11-10T12:00:00Z') });
+  await page.clock.pauseAt(new Date('2026-11-10T12:00:01Z'));
+
+  async function load(reducedMotion = 'no-preference') {
+    await page.mouse.move(0, 0);
+    await page.emulateMedia({ reducedMotion });
+    await page.goto(url);
+    await page.waitForSelector('.highlight-card');
+    if (reducedMotion === 'no-preference') await waitForAutoplay();
+  }
+
+  async function waitForAutoplay() {
+    await page.waitForFunction(() => document.querySelector('#highlight-position').getAttribute('aria-live') === 'off');
+  }
+
+  async function expectSlide(number) {
+    await page.waitForFunction(expected => {
+      const track = document.querySelector('#highlight-track').getBoundingClientRect();
+      const card = document.querySelectorAll('.highlight-card')[expected - 1].getBoundingClientRect();
+      return document.querySelector('#highlight-position').textContent === `${expected} / 7` && card.left >= track.left - 1 && card.right <= track.right + 1;
+    }, number);
+  }
+
+  async function advance(number) {
+    await page.clock.runFor(5000);
+    await expectSlide(number);
+  }
+
+  await check(`${name}: automatische Highlights im Fünf-Sekunden-Takt, Umlauf und Stopp bei Maus, Touch und Tastatur`, async () => {
+    await load();
+    await page.clock.runFor(4999);
+    assert.equal(await page.locator('#highlight-position').innerText(), '1 / 7');
+    await page.clock.runFor(1);
+    await expectSlide(2);
+    for (const number of [3, 4, 5, 6, 7, 1]) await advance(number);
+
+    await page.locator('#highlight-track').hover();
+    assert.equal(await page.locator('#highlight-position').getAttribute('aria-live'), 'polite');
+    await page.mouse.move(0, 0);
+    await page.clock.runFor(10000);
+    await expectSlide(1);
+    await page.locator('#next-highlight').click();
+    await expectSlide(2);
+    await page.clock.runFor(10000);
+    await expectSlide(2);
+
+    await load();
+    await page.locator('#highlight-track').focus();
+    await page.keyboard.press('ArrowRight');
+    await expectSlide(2);
+    await page.locator('.edition-link').focus();
+    await page.clock.runFor(10000);
+    await expectSlide(2);
+
+    await load();
+    const card = await page.locator('.highlight-card').first().boundingBox();
+    await page.touchscreen.tap(card.x + 25, card.y + 25);
+    await page.waitForSelector('#detail-dialog[open]');
+    await page.keyboard.press('Escape');
+    await page.clock.runFor(10000);
+    await expectSlide(1);
+    assert.equal(await page.locator('#highlight-position').getAttribute('aria-live'), 'polite');
+  });
+
+  await check(`${name}: automatische Highlights pausieren ausser Sicht, bei reduzierter Bewegung und geöffneten Fenstern`, async () => {
+    await load('reduce');
+    await page.clock.runFor(24000);
+    await expectSlide(1);
+    await page.emulateMedia({ reducedMotion: 'no-preference' });
+    await waitForAutoplay();
+    await advance(2);
+
+    await page.evaluate(() => scrollTo({ top: document.documentElement.scrollHeight, behavior: 'instant' }));
+    await page.waitForFunction(() => document.querySelector('#highlight-position').getAttribute('aria-live') === 'polite');
+    await page.clock.runFor(10000);
+    assert.equal(await page.locator('#highlight-position').innerText(), '2 / 7');
+    await page.evaluate(() => scrollTo({ top: 0, behavior: 'instant' }));
+    await waitForAutoplay();
+    await advance(3);
+
+    await page.locator('#open-favorites').click();
+    await page.clock.runFor(10000);
+    assert.equal(await page.locator('#highlight-position').innerText(), '3 / 7');
+    await page.keyboard.press('Escape');
+    await advance(4);
+    assert.deepEqual(errors, []);
+  });
+  await context.close();
+}
+
 async function testEngine(name, engine) {
   const browser = await engine.launch({ headless: true });
+  console.log(`\n${name} ${browser.version()} – offline über file://`);
+  await testHighlightAutoplay(name, browser);
   const context = await browser.newContext({ viewport: { width: 1440, height: 1080 }, colorScheme: 'light', reducedMotion: 'reduce', timezoneId: 'Europe/Zurich', acceptDownloads: true });
   // Direkter file://-Aufruf bei abgeschaltetem Netzwerk ist der tatsächliche Auslieferungsfall.
   await context.setOffline(true);
@@ -79,16 +178,17 @@ async function testEngine(name, engine) {
   page.on('pageerror', error => errors.push(error.message));
   page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
   page.on('request', request => requests.push(request.url()));
-  console.log(`\n${name} ${browser.version()} – offline über file://`);
   await page.goto(url);
   await page.waitForSelector('.offer-card');
 
-  await check(`${name}: 128 Angebote, fünf Kategorien und berechnete Kennzahlen`, async () => {
+  await check(`${name}: 128 Angebote, fünf Kategorien und berechnete Filterzahlen`, async () => {
     assert.equal(await visibleCount(page), 128);
     assert.equal(await page.locator('.offer-group').count(), 5);
     const ids = await page.locator('.offer-card').evaluateAll(nodes => nodes.map(node => node.dataset.offerId));
     assert.deepEqual(ids, source.angebote.map(item => item.id));
-    for (const [selector, expected] of [['#stat-total', 128], ['#stat-two', 86], ['#stat-half', 37], ['#stat-companies', 118]]) {
+    assert.equal(await page.locator('#edition-region').innerText(), 'Basel-Landschaft');
+    assert.equal(await page.locator('#edition-year').innerText(), 'Ausgabe 2027');
+    for (const [selector, expected] of [['[data-total-count]', 128], ['[data-deal="two"] .chip-count', 86], ['[data-deal="half"] .chip-count', 37]]) {
       assert.equal(Number(await page.locator(selector).innerText()), expected);
     }
     const initialImages = await page.locator('img[src]').count();
@@ -138,26 +238,55 @@ async function testEngine(name, engine) {
     assert.equal(await page.locator('#remembered-only').isChecked(), false);
   });
 
-  await check(`${name}: sechs Dashboard-Zielgruppen mit je vier funktionierenden Verweisen`, async () => {
-    for (const group of curation) {
-      await page.locator(`#audience-${group.id}`).click();
-      assert.equal(await page.locator('.highlight-card').count(), 4);
-      const ids = await page.locator('.highlight-card').evaluateAll(nodes => nodes.map(node => node.dataset.highlightId));
-      assert.deepEqual(ids, group.angebote.map(pick => offer(pick.nr).id));
-      const first = offer(group.angebote[0].nr);
-      await page.locator(`#highlight-open-${first.id}`).click();
+  await check(`${name}: sieben Highlights, Scrollen, Pfeil-/Direktnavigation, Tastatur und Detailverweise`, async () => {
+    const track = page.locator('#highlight-track');
+    assert.equal(await page.locator('.highlight-card').count(), 7);
+    const ids = await page.locator('.highlight-card').evaluateAll(nodes => nodes.map(node => node.dataset.highlightId));
+    assert.deepEqual(ids, curation.map(pick => offer(pick.nr).id));
+    assert(await page.locator('#previous-highlight').isDisabled());
+    for (const [index, pick] of curation.entries()) {
+      if (index) await page.locator('#next-highlight').click();
+      await page.waitForFunction(position => {
+        const track = document.querySelector('#highlight-track').getBoundingClientRect();
+        const card = document.querySelectorAll('.highlight-card')[position].getBoundingClientRect();
+        return card.left >= track.left - 1 && card.right <= track.right + 1;
+      }, index);
+      assert.equal(await page.locator('#highlight-position').innerText(), `${index + 1} / 7`);
+      const item = offer(pick.nr);
+      assert.equal(await page.locator(`[data-highlight-id="${item.id}"] .highlight-copy`).innerText(), pick.beschreibung);
+      await page.locator(`#highlight-open-${item.id}`).click();
       await waitForPicture(page);
-      assert.equal(await page.locator('#detail-title').innerText(), first.firma);
+      assert.equal(await page.locator('#detail-title').innerText(), item.firma);
+      assert((await page.locator('#detail-position').innerText()).includes('von 128'));
       await closeDetail(page);
-      await expectFocus(page, `highlight-open-${first.id}`);
+      await expectFocus(page, `highlight-open-${item.id}`);
     }
-    await page.locator('#audience-auszeit').focus();
+    assert(await page.locator('#next-highlight').isDisabled());
+    await page.locator('#previous-highlight').click();
+    assert.equal(await page.locator('#highlight-position').innerText(), '6 / 7');
+    await page.locator('[data-highlight-target="2"]').click();
+    assert.equal(await page.locator('#highlight-position').innerText(), '3 / 7');
+    await track.focus();
     await page.keyboard.press('ArrowRight');
-    assert.equal(await page.locator('#audience-familien').getAttribute('aria-selected'), 'true');
+    assert.equal(await page.locator('#highlight-position').innerText(), '4 / 7');
     await page.keyboard.press('End');
-    assert.equal(await page.locator('#audience-auszeit').getAttribute('aria-selected'), 'true');
+    assert.equal(await page.locator('#highlight-position').innerText(), '7 / 7');
     await page.keyboard.press('Home');
-    assert.equal(await page.locator('#audience-familien').getAttribute('aria-selected'), 'true');
+    assert.equal(await page.locator('#highlight-position').innerText(), '1 / 7');
+    await track.hover();
+    await page.mouse.wheel((await track.boundingBox()).width, 0);
+    await page.waitForFunction(() => document.querySelector('#highlight-track').scrollLeft > 100 && document.querySelector('#highlight-position').textContent !== '1 / 7');
+    await track.focus();
+    await page.keyboard.press('Home');
+    await page.keyboard.press('Tab');
+    await expectFocus(page, `highlight-open-${offer(curation[0].nr).id}`);
+    await page.keyboard.press('Tab');
+    await expectFocus(page, `highlight-save-${offer(curation[0].nr).id}`);
+    await page.keyboard.press('Tab');
+    await expectFocus(page, `highlight-open-${offer(curation[1].nr).id}`);
+    assert.equal(await page.locator('#highlight-position').innerText(), '2 / 7');
+    await track.focus();
+    await page.keyboard.press('Home');
   });
 
   await check(`${name}: Detailfenster, ganze Bilder, stabile Ansichten, Zoom, Ringnavigation und Fokus`, async () => {
@@ -232,8 +361,8 @@ async function testEngine(name, engine) {
     }
   });
 
-  await check(`${name}: Merken/Entfernen synchron in Dashboard, Karte und Detail`, async () => {
-    const nr = 69;
+  await check(`${name}: Merken/Entfernen synchron in Highlights, Karte und Detail`, async () => {
+    const nr = 126;
     const id = offer(nr).id;
     await page.locator(`#highlight-save-${id}`).click();
     assert.equal(await page.locator('#detail-dialog').getAttribute('open'), null);
@@ -243,15 +372,15 @@ async function testEngine(name, engine) {
     await page.locator('#detail-save').click();
     await assertSaved(page, nr, false);
     await page.locator('#next-offer').click();
-    assert.equal(await page.locator('#detail-save').getAttribute('data-save'), offer(70).id);
-    await assertSaved(page, 70, false);
+    assert.equal(await page.locator('#detail-save').getAttribute('data-save'), offer(127).id);
+    await assertSaved(page, 127, false);
     await page.locator('#detail-save').click();
-    await assertSaved(page, 70, true);
+    await assertSaved(page, 127, true);
     await page.locator('#previous-offer').click();
     await assertSaved(page, nr, false);
     await closeDetail(page);
-    await page.locator(`#card-save-${offer(70).id}`).click();
-    await assertSaved(page, 70, false);
+    await page.locator(`#card-save-${offer(127).id}`).click();
+    await assertSaved(page, 127, false);
     await page.locator(`#card-save-${id}`).click();
     await assertSaved(page, nr, true);
     await page.locator('#remembered-only').check();
@@ -259,8 +388,8 @@ async function testEngine(name, engine) {
     await page.locator('#search').fill('nicht-vorhanden');
     assert.equal(await visibleCount(page), 0);
     assert.equal(await page.locator('#open-favorites [data-favorites-count]').innerText(), '1');
-    await page.locator('#search').fill('technorama');
-    await page.locator('[data-category="sport"]').click();
+    await page.locator('#search').fill('sole uno');
+    await page.locator('[data-category="wellness"]').click();
     await page.locator('[data-deal="two"]').click();
     assert.equal(await visibleCount(page), 1);
     await page.locator('#reset-filters').click();
@@ -270,15 +399,15 @@ async function testEngine(name, engine) {
     await page.reload();
     await page.waitForSelector('.offer-card');
     assert.equal(await visibleCount(page), 128);
-    await assertSaved(page, 69, true);
+    await assertSaved(page, 126, true);
     assert.equal(await page.locator('#open-favorites [data-favorites-count]').innerText(), '1');
     const otherTab = await context.newPage();
     await otherTab.goto(url);
     await otherTab.waitForSelector('.offer-card');
     assert.equal(await otherTab.locator('#open-favorites [data-favorites-count]').innerText(), '0');
     await otherTab.close();
-    await page.locator(`#card-save-${offer(69).id}`).click();
-    await assertSaved(page, 69, false);
+    await page.locator(`#card-save-${offer(126).id}`).click();
+    await assertSaved(page, 126, false);
   });
 
   const exportNrs = [119, 112, 2, 6, 16, 80, 121, 95, 93, 65, 127];

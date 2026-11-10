@@ -1,74 +1,58 @@
 [
   {
-    "id": "familien",
-    "name": "Familien",
-    "icon": "family",
-    "intro": "Kleine Entdecker, grosse gemeinsame Momente.",
-    "angebote": [
-      {"nr": 69, "satz": "Ein Tag fürs Entdecken: Tageskarten fürs Technorama gibt es hier als 2für1."},
-      {"nr": 72, "satz": "Ab ins Kinderparadies! Bei Topolino wartet euer nächster 2für1-Ausflug."},
-      {"nr": 41, "satz": "Die ganze Technikwelt entdecken – mit dem 2für1-Tagespass von Enter."},
-      {"nr": 77, "satz": "Kinder-Camp in Frenkendorf, Liestal oder Sissach? Spare 50 % auf die Teilnahme."}
-    ]
+    "nr": 126,
+    "ort": "Rheinfelden",
+    "leistung": "Eintritt in die Wellness-Welt",
+    "beschreibung": "Zwei reguläre Einzeleintritte zum Preis von einem. Gültig von Montag bis Freitag, ausser an Feiertagen.",
+    "einloesung": "Keine Gutscheinkäufe. Nicht mit anderen Vergünstigungen kombinierbar.",
+    "gueltigkeit": "01.12.2026–30.11.2027"
   },
   {
-    "id": "sportfans",
-    "name": "Sportfans",
-    "icon": "activity",
-    "intro": "Mitfiebern, mitspielen, gemeinsam mehr bewegen.",
-    "angebote": [
-      {"nr": 45, "satz": "Gemeinsam mitfiebern: 2für1 an einem Meisterschaftsspiel der ersten FCB-Mannschaft."},
-      {"nr": 39, "satz": "Mehr gemeinsame Fanmomente mit dem 2für1-Einzelticket beim EHC Basel."},
-      {"nr": 58, "satz": "Zeit für Padel: Ab 90 Minuten gibt es die Platzmiete zum halben Preis."},
-      {"nr": 67, "satz": "Tennis oder Badminton? Spare 50 % auf die Platzmiete für deine nächste Spielstunde."}
-    ]
+    "nr": 45,
+    "ort": "Basel · St. Jakob-Park",
+    "leistung": "Meisterschaftsspiel der 1. Mannschaft",
+    "beschreibung": "Zwei Tickets zum Preis von einem für ein Heimspiel im Sektor G. Für die Saison 2026/27 oder 2027/28.",
+    "einloesung": "Die Tickets sind im FCB-Fanshop erhältlich.",
+    "gueltigkeit": "01.12.2026–30.11.2027"
   },
   {
-    "id": "geniesser",
-    "name": "Geniesser",
-    "icon": "food",
-    "intro": "Gute Gespräche beginnen oft an einem gedeckten Tisch.",
-    "angebote": [
-      {"nr": 23, "satz": "Lust auf Tapas? Entdecke die gemischte Platte «Plato de Don Antonio» als 2für1."},
-      {"nr": 2, "satz": "«Huus» Cordon bleu mit Pommes oder Fitness – und ein 2für1-Deal zum Geniessen."},
-      {"nr": 7, "satz": "So beginnt der Tag genussvoll: eine Frühstücks-Etagere im 2für1-Angebot."},
-      {"nr": 25, "satz": "Burger-Date gefällig? Bei The Burger by Tender and Loins heisst es 2für1."}
-    ]
+    "nr": 119,
+    "ort": "Pratteln",
+    "leistung": "Tageseintritt Hamam, Bad und Sauna",
+    "beschreibung": "Zwei Tageseintritte ins Hamam zum Preis von einem, inklusive Bad und Sauna.",
+    "einloesung": "Montag bis Freitag, ausser an gesetzlichen Feiertagen und während der Ferien in BS und BL. Nicht mit anderen Rabatten kombinierbar.",
+    "gueltigkeit": "01.12.2026–30.11.2027"
   },
   {
-    "id": "paare",
-    "name": "Paare",
-    "icon": "heart",
-    "intro": "Die schönsten Pläne macht man zu zweit.",
-    "angebote": [
-      {"nr": 119, "satz": "Zeit zu zweit: ein Hamam-Tag inklusive Bad und Sauna im 2für1-Angebot."},
-      {"nr": 53, "satz": "Zusammen ins Kino Sputnik – mit einem 2für1-Angebot für euren Eintritt."},
-      {"nr": 17, "satz": "Ein Essen zu zweit? Der Hauptgang im À-la-carte-Restaurant wartet als 2für1."},
-      {"nr": 93, "satz": "Raus aus dem Alltag: Entdecke die 2für1-Übernachtung im Hotel Bad Eptingen."}
-    ]
+    "nr": 61,
+    "ort": "Balmberg",
+    "leistung": "Eintritt in den Seilpark",
+    "beschreibung": "Eine erwachsene Person bezahlt den Eintritt; der günstigere Eintritt ist gratis.",
+    "einloesung": "Nicht mit anderen Rabatten kombinierbar. Sommerbetrieb von April bis Oktober; im Januar und Februar geschlossen.",
+    "gueltigkeit": "01.12.2026–30.11.2027"
   },
   {
-    "id": "freunde",
-    "name": "Freunde & Action",
-    "icon": "bolt",
-    "intro": "Aus «Wir sollten mal» wird euer nächstes Erlebnis.",
-    "angebote": [
-      {"nr": 38, "satz": "«Kart» oder «Game of Karts»? Sichert euch 50 % Rabatt für die nächste Runde."},
-      {"nr": 42, "satz": "Minigolf im Schwarzlicht – gemeinsam spielen mit 2für1-Eintritt."},
-      {"nr": 61, "satz": "Euer nächster Ausflug führt in den Seilpark Balmberg: Eintritt als 2für1."},
-      {"nr": 59, "satz": "Racing für eure Runde: 50 % Rabatt auf 2–3 Stunden für 1–6 Personen."}
-    ]
+    "nr": 17,
+    "ort": "Münchenstein",
+    "leistung": "Hauptgang im À-la-carte-Restaurant",
+    "beschreibung": "Bei zwei Hauptgängen ist der günstigere gratis. Getränke sind nicht inbegriffen.",
+    "einloesung": "Gutschein bei der Reservation angeben. Nicht bei Events einlösbar.",
+    "gueltigkeit": "01.12.2026–30.11.2027"
   },
   {
-    "id": "auszeit",
-    "name": "Auszeit",
-    "icon": "leaf",
-    "intro": "Weniger Alltag. Mehr Zeit für dich.",
-    "angebote": [
-      {"nr": 126, "satz": "Einfach mal abschalten: Entdecke den 2für1-Eintritt bei sole uno."},
-      {"nr": 127, "satz": "Ein Tag für dich und deine Begleitung – mit 2für1 auf den Eintritt «Ein und Alles»."},
-      {"nr": 123, "satz": "Wähle deine Massage und geniesse 50 % Rabatt bei Massage Praxis Bühler."},
-      {"nr": 102, "satz": "Zeit für ruhige Klänge: Entdecke die Klangschalen-Massage/-Therapie als 2für1."}
-    ]
+    "nr": 53,
+    "ort": "Liestal",
+    "leistung": "Kinobesuch",
+    "beschreibung": "Zwei Eintritte zum Preis von einem, gültig von Montag bis Freitag.",
+    "einloesung": "Sondervorstellungen und Premieren sind ausgenommen.",
+    "gueltigkeit": "01.12.2026–30.11.2027"
+  },
+  {
+    "nr": 103,
+    "ort": "Gelterkinden · Zunzgen · Liestal",
+    "leistung": "Cervelat",
+    "beschreibung": "Vier Cervelat zum Preis von zwei. Der Gutschein gilt in allen drei Geschäften.",
+    "einloesung": "In Zunzgen nur während der bedienten Öffnungszeiten einlösbar.",
+    "gueltigkeit": "01.12.2026–30.11.2027"
   }
 ]

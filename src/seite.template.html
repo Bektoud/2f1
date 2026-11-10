@@ -7,9 +7,9 @@
   <meta name="theme-color" content="#f7f6f0" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#131b16" media="(prefers-color-scheme: dark)">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data: blob:; connect-src 'none'; font-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
-  <meta name="description" content="Dein Gutscheinbuch zum Entdecken, Merken und Mitnehmen. Alle Angebote und Gutscheinbilder in einer vollständig offline nutzbaren Seite.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23264d39'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial' font-weight='bold' font-size='38' fill='%23f8f4df'%3E2%3C/text%3E%3C/svg%3E">
-  <title>Gutscheinbuch – @@BOOK_TITLE@@</title>
+  <meta name="description" content="Gutscheine für Basel-Landschaft: ausgewählte Angebote, eine vollständige Übersicht mit Filtern und eine Merkliste. Auch offline nutzbar.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='8' y='16' width='48' height='32' rx='6' fill='%23f7f6f0' stroke='%23264d39' stroke-width='4'/%3E%3Cpath d='M40 18v28' stroke='%23264d39' stroke-width='3' stroke-dasharray='4 4'/%3E%3C/svg%3E">
+  <title>Angebote – @@BOOK_TITLE@@</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -69,83 +69,65 @@
     .count { display: inline-grid; place-items: center; min-width: 25px; height: 25px; padding: 0 6px; font-size: .76rem; font-weight: 750; border-radius: 50px; background: var(--brand-soft); color: var(--ink); font-variant-numeric: tabular-nums; }
     .site-header { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--line); }
     .header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 82px; gap: 24px; }
-    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
-    .brand-mark { width: 53px; height: 47px; display: flex; align-items: center; justify-content: center; border-radius: 10px; background: var(--terracotta); color: #fff; font-size: 1.26rem; font-weight: 800; letter-spacing: -.055em; }
-    .brand-mark small { font-size: .68rem; margin: 0 1px; }
-    .brand-title { display: block; font-size: .9rem; color: var(--ink); font-weight: 750; letter-spacing: -.02em; }
-    .brand-region { display: block; font-size: .7rem; color: var(--muted); }
+    .edition-link { min-width: 0; text-decoration: none; }
+    .edition-region { display: block; color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; letter-spacing: -.035em; line-height: 1.3; }
+    .edition-meta { display: block; color: var(--muted); font-size: .7rem; margin-top: 3px; }
     .header-nav { display: flex; align-items: center; gap: 28px; margin-left: auto; margin-right: 22px; font-size: .85rem; font-weight: 600; }
     .header-nav a { text-decoration: none; }
     .header-nav a:hover { text-decoration: underline; }
     .favorites-trigger { white-space: nowrap; border-color: var(--brand); }
-    .hero { display: grid; grid-template-columns: 1.25fr 1fr; align-items: center; gap: 42px; padding-block: 55px 43px; }
-    .hero .eyebrow { color: var(--terracotta); margin-bottom: 15px; }
-    h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(3.25rem, 5.7vw, 5.15rem); line-height: 1.03; letter-spacing: -.045em; }
-    h1 em { color: var(--terracotta); font-style: italic; }
-    .hero-copy { max-width: 465px; color: var(--muted); margin-block: 22px 25px; font-size: .96rem; }
-    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; }
-    .offline-note { display: inline-flex; align-items: center; gap: 6px; font-size: .73rem; color: var(--muted); }
-    .offline-note .icon { width: 16px; height: 16px; }
-    .hero-art { position: relative; display: grid; place-items: center; min-height: 305px; isolation: isolate; }
-    .hero-art::before { content: ""; position: absolute; width: 270px; height: 270px; background: var(--brand-soft); border-radius: 50%; z-index: -2; }
-    .art-ticket { display: flex; width: min(395px, 95%); min-height: 223px; background: #e9efd9; border: 1px solid #b4c6a4; border-radius: 14px; transform: rotate(-7deg); color: #26432e; box-shadow: 10px 15px 0 #233c2e0b; }
-    .art-ticket::before, .art-ticket::after { content: ""; position: absolute; top: 64%; height: 24px; width: 12px; background: var(--bg); border: 1px solid #b4c6a4; }
-    .art-ticket::before { left: -1px; border-radius: 0 16px 16px 0; border-left: 0; }
-    .art-ticket::after { right: -1px; border-radius: 16px 0 0 16px; border-right: 0; }
-    .art-ticket-main { flex: 1; min-width: 0; padding: 25px 30px; }
-    .art-ticket-main .eyebrow { color: #48623f; font-size: .6rem; margin-bottom: 15px; }
-    .art-ticket-main strong { display: block; font-family: Georgia, serif; font-weight: 400; font-size: 2.15rem; line-height: 1.08; }
-    .art-ticket-main p { margin-top: 21px; font-size: .7rem; border-top: 1px dashed #92a786; padding-top: 13px; }
-    .art-ticket-stub { padding: 18px; border-left: 1px dashed #92a786; display: flex; align-items: center; writing-mode: vertical-rl; justify-content: space-between; font-size: .68rem; letter-spacing: .16em; }
-    .art-ticket-stub span:first-child { font-weight: 750; }
-    .art-stamp { position: absolute; width: 111px; height: 111px; right: 2%; bottom: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #ad492b; color: #fff9ec; transform: rotate(9deg); border-radius: 50%; outline: 1px dashed #fff6; outline-offset: -7px; }
-    .art-stamp strong { font-size: 2rem; line-height: 1.1; letter-spacing: -.05em; }
-    .art-stamp span { font-size: .57rem; letter-spacing: .1em; margin-top: 6px; }
-    .art-spark { position: absolute; color: var(--terracotta); width: 37px; height: 37px; top: -2px; left: 18px; stroke-width: 1.4; transform: rotate(8deg); }
-    .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding-block: 26px; border-block: 1px solid var(--line); }
-    .stat { display: flex; flex-direction: column-reverse; gap: 3px; padding-inline: 30px; border-right: 1px solid var(--line); }
-    .stat:first-child { padding-left: 0; }
-    .stat:last-child { border-right: 0; }
-    .stat dd { font-size: 2rem; line-height: 1.2; font-weight: 650; color: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: -.06em; }
-    .stat dt { color: var(--muted); font-size: .78rem; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; letter-spacing: -.04em; }
     .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 23px; }
     .section-heading .eyebrow { margin-bottom: 9px; }
     h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(1.8rem, 3vw, 2.5rem); letter-spacing: -.035em; line-height: 1.15; }
     .section-subtitle { color: var(--muted); margin-top: 11px; font-size: .88rem; }
-    .inspiration { padding-block: 51px 52px; }
-    .curated-label { display: flex; align-items: center; gap: 7px; color: var(--muted); font-size: .73rem; flex: 0 0 auto; padding-bottom: 5px; }
-    .curated-label .icon { width: 17px; height: 17px; }
-    .audience-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
-    .audience-tab { display: inline-flex; align-items: center; gap: 8px; min-height: 43px; padding: 9px 16px; background: transparent; border: 1px solid var(--line); border-radius: 50px; font-size: .81rem; font-weight: 600; }
-    .audience-tab .icon { width: 18px; height: 18px; }
-    .audience-tab[aria-selected="true"] { background: var(--brand); color: var(--on-brand); border-color: var(--brand); }
-    .audience-tab:hover:not([aria-selected="true"]) { background: var(--brand-soft); }
-    .audience-intro { margin-bottom: 18px; color: var(--muted); font-size: .82rem; min-height: 1.6em; }
-    .highlight-grid, .offer-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+    .highlights { padding-block: 42px 34px; }
+    .all-offers-link { display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto; min-height: 44px; font-size: .82rem; font-weight: 650; text-decoration: none; }
+    .all-offers-link:hover { text-decoration: underline; }
+    .all-offers-link .icon { width: 17px; height: 17px; }
+    .highlight-track { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 88%; gap: 20px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-behavior: smooth; scroll-padding-inline: 6px; padding: 6px 6px 15px; margin-inline: -6px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+    .highlight-navigation { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 10px; }
+    .highlight-position { color: var(--muted); font-size: .78rem; font-variant-numeric: tabular-nums; min-width: 65px; }
+    .highlight-pagination { display: flex; gap: 3px; }
+    .highlight-dot { display: grid; place-items: center; width: 32px; height: 36px; padding: 0; border-radius: 6px; background: transparent; }
+    .highlight-dot::after { content: ""; width: 6px; height: 6px; border-radius: 20px; background: var(--muted); }
+    .highlight-dot[aria-current="true"]::after { width: 22px; background: var(--brand); }
+    .highlight-arrows { display: flex; gap: 8px; }
+    .offer-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
     .category-food { --cat: #a0461f; --cat-bg: #fdf0e5; --cat-line: #d2a68e; }
     .category-night { --cat: #285fa9; --cat-bg: #edf3ff; --cat-line: #97b1d6; }
     .category-sport { --cat: #37733e; --cat-bg: #eef4e6; --cat-line: #a3bd92; }
     .category-shopping { --cat: #7c610c; --cat-bg: #fff6d9; --cat-line: #c5b36b; }
     .category-wellness { --cat: #a33371; --cat-bg: #fcecf4; --cat-line: #d7a3c0; }
-    .highlight-card, .offer-card { position: relative; min-width: 0; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); transition: box-shadow .2s, transform .2s; }
-    .highlight-card:hover, .offer-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
+    .offer-card { position: relative; min-width: 0; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); transition: box-shadow .2s, transform .2s; }
+    .offer-card:hover { box-shadow: var(--shadow); transform: translateY(-3px); }
     .ticket-visual { position: relative; aspect-ratio: 500 / 222; background: #fff; border-radius: 17px 17px 0 0; overflow: hidden; border-bottom: 1px solid var(--line); }
-    .ticket-visual img { width: 100%; height: 100%; object-fit: contain; opacity: 0; }
+    .ticket-visual img { width: 100%; height: 100%; object-fit: cover; opacity: 0; }
     .ticket-visual img.is-ready { opacity: 1; }
     .image-placeholder { position: absolute; inset: 0; display: grid; place-items: center; color: #69786b; background: #f4f5f0; z-index: 0; }
     .ticket-visual img { position: relative; z-index: 1; }
-    .highlight-content { padding: 17px 18px 8px; flex: 1; }
-    .mini-deal { display: inline-block; font-size: .74rem; color: var(--cat); background: var(--cat-bg); border-radius: 5px; padding: 3px 8px; font-weight: 750; margin-bottom: 11px; }
-    .highlight-content h3 { font-size: .96rem; font-weight: 750; line-height: 1.3; margin-bottom: 9px; }
-    .highlight-copy { font-size: .8rem; color: var(--muted); line-height: 1.65; }
+    .highlight-card { position: relative; min-width: 0; display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); background: var(--surface); border: 1px solid var(--cat-line); border-radius: var(--radius); scroll-snap-align: start; }
+    .highlight-media { display: flex; flex-direction: column; min-width: 0; background: var(--cat-bg); border-radius: 17px 0 0 17px; border-right: 1px dashed var(--cat-line); overflow: hidden; }
+    .highlight-media .ticket-visual { border-radius: 17px 0 0 0; flex: 0 0 auto; }
+    .highlight-deal { display: flex; flex-direction: column; justify-content: center; flex: 1; gap: 10px; padding: 25px 30px; }
+    .highlight-deal .deal { font-size: 4.8rem; margin: 0; }
+    .highlight-service { font-size: .92rem; color: var(--cat); max-width: 260px; }
+    .highlight-content { min-width: 0; display: flex; flex-direction: column; padding: 28px 32px; }
+    .highlight-location { color: var(--muted); font-size: .77rem; margin-bottom: 10px; }
+    .highlight-content h2 { font-size: clamp(1.65rem, 2.65vw, 2.25rem); margin-bottom: 17px; line-height: 1.18; }
+    .highlight-copy { font-size: .93rem; line-height: 1.7; }
+    .highlight-facts { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .77rem; color: var(--muted); }
+    .highlight-facts > div + div { margin-top: 10px; }
+    .highlight-facts dt { font-weight: 650; color: var(--text); margin-bottom: 3px; }
+    .highlight-facts dd { overflow-wrap: anywhere; }
     .stretched-open { display: inline; padding: 0; background: transparent; font: inherit; text-align: left; color: inherit; overflow-wrap: anywhere; }
     .stretched-open::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: var(--radius); }
     .stretched-open:focus-visible { outline: none; }
     .stretched-open:focus-visible::after { outline: 3px solid var(--focus); outline-offset: 4px; }
-    .highlight-footer { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px 14px 18px; gap: 10px; }
-    .highlight-footer > span { font-size: .72rem; color: var(--cat); font-weight: 650; }
+    .highlight-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 22px; gap: 10px; margin-top: auto; }
+    .highlight-cta { display: inline-flex; align-items: center; gap: 8px; font-size: .82rem; font-weight: 650; color: var(--ink); }
+    .highlight-cta .icon { width: 17px; height: 17px; }
     .highlight-footer .save-btn, .ticket-footer .save-btn { position: relative; z-index: 2; }
-    .highlight-footer .save-btn { width: 40px; height: 40px; }
     .offers { padding-top: 34px; border-top: 1px solid var(--line); }
     .results-count { flex: 0 0 auto; color: var(--muted); font-size: .83rem; padding-bottom: 5px; }
     .results-count strong { color: var(--ink); font-weight: 750; }
@@ -200,10 +182,6 @@
     .site-footer { border-top: 1px solid var(--line); padding-block: 28px 38px; margin-top: 12px; }
     .footer-top { display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: .76rem; color: var(--muted); }
     .footer-top strong { color: var(--ink); }
-    .site-footer details { margin-top: 20px; font-size: .76rem; color: var(--muted); max-width: 850px; }
-    .site-footer summary { cursor: pointer; width: fit-content; padding-block: 7px; }
-    .site-footer details p { margin-top: 9px; }
-    .site-footer details ul { padding-left: 19px; margin-block: 9px; }
     dialog { width: calc(100% - 40px); max-width: 1040px; max-height: calc(100dvh - 40px); padding: 0; border: 1px solid var(--line); border-radius: 22px; color: var(--text); background: var(--surface); box-shadow: var(--modal-shadow); overscroll-behavior: contain; }
     dialog[open] { display: flex; flex-direction: column; }
     dialog::backdrop { background: #102017b8; backdrop-filter: blur(5px); }
@@ -270,33 +248,21 @@
     .toast { position: fixed; z-index: 15; left: 50%; bottom: 24px; transform: translate(-50%, 15px); max-width: calc(100% - 36px); width: max-content; background: var(--brand); color: var(--on-brand); border-radius: 10px; box-shadow: var(--shadow); padding: 12px 19px; font-size: .82rem; opacity: 0; pointer-events: none; transition: opacity .18s, transform .18s; }
     .toast.is-visible { opacity: 1; transform: translate(-50%, 0); }
     .noscript { display: block; padding: 24px; background: var(--surface); border: 1px solid var(--line); margin-block: 30px; }
-    @media (min-width: 1500px) { .container { width: min(1320px, calc(100% - 100px)); } .hero { padding-block: 62px 49px; } }
+    @media (min-width: 1500px) { .container { width: min(1320px, calc(100% - 100px)); } }
     @media (max-width: 1100px) {
-      .highlight-grid, .offer-grid { gap: 16px; }
+      .offer-grid { gap: 16px; }
       .offer-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .hero { gap: 15px; }
-      .art-ticket-main { padding: 24px; }
-      .highlight-content { padding-inline: 14px; }
-      .highlight-content h3 { font-size: .88rem; }
-      .highlight-footer { padding-left: 14px; }
+      .highlight-track { grid-auto-columns: 92%; gap: 16px; }
+      .highlight-content { padding: 24px; }
+      .highlight-deal { padding: 24px; }
+      .highlight-deal .deal { font-size: 4rem; }
     }
     @media (max-width: 850px) {
       .header-nav { gap: 18px; margin-right: 0; }
-      .hero-art { min-height: 250px; }
-      .art-ticket { min-height: 200px; }
-      .art-ticket-main { padding: 21px; }
-      .art-ticket-main strong { font-size: 1.7rem; }
-      .art-ticket-stub { padding: 11px; }
-      .art-stamp { width: 88px; height: 88px; }
-      .art-stamp strong { font-size: 1.6rem; }
-      .art-stamp span { font-size: .47rem; }
-      .art-spark { width: 28px; }
-      .highlight-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .highlight-content h3 { font-size: 1rem; }
-      .highlight-content { padding-inline: 18px; }
-      .highlight-footer { padding-left: 18px; }
-      .highlight-copy { font-size: .85rem; }
-      .curated-label { display: none; }
+      .highlight-card { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); }
+      .highlight-content { padding: 22px; }
+      .highlight-copy { font-size: .88rem; }
+      .highlight-service { font-size: .85rem; }
       .detail-layout { grid-template-columns: minmax(0, 1fr) 220px; gap: 18px; padding-inline: 20px; }
       .detail-summary .deal { font-size: 2.7rem; }
       .detail-summary .deal-combined { font-size: 1.9rem; }
@@ -305,24 +271,27 @@
       .container { width: calc(100% - 36px); }
       .header-inner { min-height: 72px; gap: 12px; }
       .header-nav { display: none; }
-      .brand-region { font-size: .65rem; }
+      .edition-region { font-size: 1.22rem; }
+      .edition-meta { font-size: .64rem; }
       .favorites-trigger { font-size: .78rem; gap: 8px; padding: 9px 11px; min-height: 43px; }
       .favorites-trigger > .icon { width: 18px; height: 18px; }
-      .hero { padding-block: 37px 30px; grid-template-columns: 1fr; gap: 0; }
-      .hero-art { display: none; }
-      h1 { font-size: clamp(3.2rem, 10vw, 4.3rem); }
-      .hero-copy { max-width: 530px; margin-block: 17px 23px; font-size: .91rem; }
-      .hero-actions { gap: 13px; }
-      .offline-note { font-size: .69rem; }
-      .stats { gap: 0; padding-block: 20px; }
-      .stat { padding-inline: 15px; }
-      .stat dd { font-size: 1.7rem; }
-      .stat dt { font-size: .65rem; }
       .section-heading { gap: 14px; align-items: start; }
-      .inspiration { padding-block: 36px 37px; }
-      .audience-tabs { gap: 7px; }
-      .audience-tab { font-size: .75rem; padding: 8px 12px; }
-      .audience-tab .icon { width: 16px; height: 16px; }
+      .highlights { padding-block: 29px 25px; }
+      .highlights .section-heading { flex-direction: column; gap: 8px; margin-bottom: 15px; }
+      .highlights .section-subtitle { font-size: .82rem; }
+      .all-offers-link { min-height: 36px; font-size: .78rem; }
+      .highlight-track { grid-auto-columns: 100%; }
+      .highlight-card { display: flex; flex-direction: column; }
+      .highlight-media { border-right: 0; border-bottom: 1px dashed var(--cat-line); border-radius: 17px 17px 0 0; }
+      .highlight-media .ticket-visual { border-radius: 17px 17px 0 0; }
+      .highlight-deal { flex-direction: row; align-items: center; justify-content: start; gap: 22px; padding: 14px 20px; }
+      .highlight-deal .deal { font-size: 3rem; flex: 0 0 auto; }
+      .highlight-service { font-size: .8rem; max-width: 230px; }
+      .highlight-content { padding: 20px; flex: 1; }
+      .highlight-location { font-size: .72rem; margin-bottom: 8px; }
+      .highlight-content h2 { font-size: 1.6rem; margin-bottom: 13px; }
+      .highlight-facts { margin-top: 16px; padding-top: 13px; font-size: .75rem; }
+      .highlight-footer { padding-top: 16px; }
       .offer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .filter-panel { padding: 18px; margin-bottom: 29px; }
       .search-row { grid-template-columns: 1fr; gap: 10px; padding-bottom: 14px; }
@@ -365,25 +334,12 @@
       .image-fallback { padding: 22px; }
     }
     @media (max-width: 430px) {
-      .brand-title { font-size: .8rem; }
-      .brand-mark { width: 43px; height: 43px; font-size: 1.16rem; }
-      .brand { gap: 8px; }
-      .brand-region { display: none; }
+      .edition-region { font-size: 1.1rem; }
+      .edition-area { display: none; }
       .favorites-trigger { gap: 6px; }
       .favorites-trigger > .icon { display: none; }
-      .hero .eyebrow { font-size: .63rem; }
-      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 18px; }
-      .stat:nth-child(2) { border: 0; }
-      .stat:nth-child(3) { padding-left: 0; }
-      .stat dt { font-size: .72rem; }
-      .stat dd { font-size: 1.95rem; }
-      .highlight-grid, .offer-grid { grid-template-columns: minmax(0, 1fr); }
-      .highlight-card { display: grid; grid-template-columns: 1fr 83px; }
-      .highlight-card .ticket-visual { grid-column: 1 / -1; }
-      .highlight-card .highlight-content { padding-bottom: 20px; }
-      .highlight-card .highlight-footer { padding: 10px 16px 20px 0; align-items: end; justify-content: end; }
-      .highlight-footer > span { display: none; }
-      .highlight-content h3 { font-size: 1rem; }
+      .highlight-pagination { display: none; }
+      .offer-grid { grid-template-columns: minmax(0, 1fr); }
       .offer-copy { font-size: .8rem; }
       .ticket-main { padding: 20px; }
       .ticket-main h4 { font-size: 1.08rem; }
@@ -406,30 +362,27 @@
         --heart: #ffacc1; --heart-bg: #482735; --focus: #9cbbff;
         --shadow: 0 12px 35px #0003; --modal-shadow: 0 24px 100px #0009;
       }
-      .brand-mark { background: #ad492b; color: #fff; }
       .category-food { --cat: #f3ad82; --cat-bg: #412e23; --cat-line: #79513a; }
       .category-night { --cat: #a5c4ff; --cat-bg: #25344d; --cat-line: #4d668e; }
       .category-sport { --cat: #b3d799; --cat-bg: #2c3e26; --cat-line: #607b48; }
       .category-shopping { --cat: #e9ce76; --cat-bg: #40371d; --cat-line: #807144; }
       .category-wellness { --cat: #f2afd3; --cat-bg: #422c3b; --cat-line: #805b74; }
       .ticket-visual { border-bottom-color: #74826d; }
-      .art-ticket { box-shadow: 10px 15px 0 #0003; }
       dialog::backdrop { background: #060c09cc; }
     }
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
+      html, .highlight-track { scroll-behavior: auto; }
       *, *::before, *::after { animation: none !important; transition: none !important; }
-      .offer-card:hover, .highlight-card:hover { transform: none; }
+      .offer-card:hover { transform: none; }
     }
     @media (forced-colors: active) {
-      .save-btn[aria-pressed="true"], .filter-chip[aria-pressed="true"], .audience-tab[aria-selected="true"] { outline: 2px solid Highlight; }
+      .save-btn[aria-pressed="true"], .filter-chip[aria-pressed="true"], .highlight-dot[aria-current="true"] { outline: 2px solid Highlight; }
       .ticket-visual img { forced-color-adjust: none; }
     }
     @media print {
       :root { color-scheme: light; }
-      .site-header, .hero, .inspiration, .filter-panel, .site-footer, .save-btn, .toast, .skip-link { display: none !important; }
+      .site-header, .highlights, .filter-panel, .site-footer, .save-btn, .toast, .skip-link { display: none !important; }
       .container { width: 100%; }
-      .stats { margin-bottom: 25px; }
       .offers { border: 0; }
       .offer-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
       .offer-card { break-inside: avoid; background: #fff; color: #222; }
@@ -448,13 +401,6 @@
     <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
     <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
     <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4 10a8 8 0 1 1 .8 7M4 4v6h6"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
-    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2Z"/></symbol>
-    <symbol id="i-family" viewBox="0 0 24 24"><circle cx="8" cy="6" r="3"/><circle cx="17" cy="8" r="2.5"/><path d="M2 21v-4a6 6 0 0 1 12 0v4m2-8a5 5 0 0 1 6 5v3"/></symbol>
-    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M2 12h5l3-8 4 16 3-8h5"/></symbol>
-    <symbol id="i-food" viewBox="0 0 24 24"><path d="M4 3v6a3 3 0 0 0 6 0V3M7 3v18m12 0V3c-4 1-5 5-5 10h5"/></symbol>
-    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-8l1-7Z"/></symbol>
-    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3c-8-1-16 2-16 9a7 7 0 0 0 7 7c7 0 10-8 9-16ZM3 22l12-12"/></symbol>
     <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 5h18v5a2 2 0 0 0 0 4v5H3v-5a2 2 0 0 0 0-4V5Zm12 0v3m0 3v2m0 3v3"/></symbol>
     <symbol id="i-zoom" viewBox="0 0 24 24"><circle cx="10" cy="10" r="7"/><path d="m15 15 6 6M7 10h6m-3-3v6"/></symbol>
     <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
@@ -464,12 +410,12 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#start" title="Zum Seitenanfang">
-        <span class="brand-mark" aria-hidden="true">2<small>für</small>1</span>
-        <span><span class="brand-title">Gutscheinbuch</span><span class="brand-region" id="brand-region"></span></span>
+      <a class="edition-link" href="#start" title="Zum Seitenanfang">
+        <span class="edition-region" id="edition-region"></span>
+        <span class="edition-meta"><span class="edition-area" id="edition-area"></span><span id="edition-year"></span></span>
       </a>
       <nav class="header-nav" aria-label="Hauptnavigation">
-        <a href="#inspiration">Inspiration</a>
+        <a href="#highlights">Highlights</a>
         <a href="#angebote">Alle Angebote</a>
       </nav>
       <button type="button" class="btn favorites-trigger" id="open-favorites" data-open-favorites aria-haspopup="dialog" aria-controls="favorites-dialog">
@@ -480,50 +426,26 @@
   </header>
 
   <main class="container">
-    <section class="hero" aria-labelledby="hero-title">
-      <div>
-        <p class="eyebrow" id="edition-label">Dein Gutscheinbuch</p>
-        <h1 id="hero-title">Gute Zeit.<br><em>Doppelt schön.</em></h1>
-        <p class="hero-copy">Zusammen geniessen, Neues entdecken, eine Auszeit nehmen. Dein Gutscheinbuch für <span id="hero-region"></span> steckt voller Möglichkeiten.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#angebote">Alle Angebote entdecken <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <span class="offline-note"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Alles dabei. Auch offline.</span>
-        </div>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg class="icon art-spark"><use href="#i-spark"/></svg>
-        <div class="art-ticket">
-          <div class="art-ticket-main"><p class="eyebrow">Weniger Alltag, mehr Vorfreude</p><strong>Platz für<br>schöne Pläne.</strong><p><span data-total-count></span> Angebote. Deine Lieblingsmomente.</p></div>
-          <div class="art-ticket-stub"><span>GEMEINSAM MEHR ERLEBEN</span><span id="ticket-edition"></span></div>
-        </div>
-        <div class="art-stamp"><strong>2für1</strong><span>ZEIT FÜR UNS</span></div>
-      </div>
-    </section>
-
-    <section aria-label="Dein Gutscheinbuch in Zahlen">
-      <dl class="stats">
-        <div class="stat"><dt>Angebote entdecken</dt><dd id="stat-total">–</dd></div>
-        <div class="stat"><dt>2für1-Angebote</dt><dd id="stat-two">–</dd></div>
-        <div class="stat"><dt>50-%-Rabatt-Angebote</dt><dd id="stat-half">–</dd></div>
-        <div class="stat"><dt>Verschiedene Firmen</dt><dd id="stat-companies">–</dd></div>
-      </dl>
-    </section>
-
-    <section class="inspiration" id="inspiration" aria-labelledby="inspiration-title">
+    <section class="highlights" id="highlights" aria-labelledby="highlights-title">
       <div class="section-heading">
-        <div><p class="eyebrow">Ein bisschen Inspiration</p><h2 id="inspiration-title">Worauf hast du Lust?</h2><p class="section-subtitle">Vier ausgewählte Ideen für das, was dir gerade guttut.</p></div>
-        <p class="curated-label"><svg class="icon" aria-hidden="true"><use href="#i-spark"/></svg>Für dich ausgesucht</p>
+        <div><h1 id="highlights-title">Ausgewählte Angebote</h1><p class="section-subtitle">Bäder, Sport, Gastronomie und Einkauf aus der aktuellen Ausgabe.</p></div>
+        <a class="all-offers-link" href="#angebote">Alle <span data-total-count></span> Angebote <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
-      <div class="audience-tabs" id="audience-tabs" role="tablist" aria-label="Inspiration nach Zielgruppe"></div>
-      <div id="audience-panel" role="tabpanel" tabindex="0">
-        <p id="audience-intro" class="audience-intro"></p>
-        <div id="highlight-grid" class="highlight-grid"></div>
+      <p class="sr-only" id="highlights-help">Die Angebote blättern automatisch weiter und halten bei Interaktion an. Horizontal scrollen oder die Pfeilknöpfe verwenden. Mit Fokus auf der Liste: Pfeiltasten zum Blättern, Pos1 zum ersten und Ende zum letzten Angebot.</p>
+      <div class="highlight-track" id="highlight-track" tabindex="0" role="region" aria-label="Highlights" aria-describedby="highlights-help"></div>
+      <div class="highlight-navigation">
+        <p class="highlight-position" id="highlight-position" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div class="highlight-pagination" id="highlight-pagination" role="group" aria-label="Highlight auswählen"></div>
+        <div class="highlight-arrows">
+          <button class="icon-btn" id="previous-highlight" type="button" aria-label="Vorheriges Highlight" aria-controls="highlight-track"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+          <button class="icon-btn" id="next-highlight" type="button" aria-label="Nächstes Highlight" aria-controls="highlight-track"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
       </div>
     </section>
 
     <section class="offers" id="angebote" aria-labelledby="offers-title" tabindex="-1">
       <div class="section-heading">
-        <div><p class="eyebrow">Stöbern, finden, vorfreuen</p><h2 id="offers-title">Deine nächste gute Idee.</h2><p class="section-subtitle">Alle Gutscheine. Ganz nach deinem Geschmack.</p></div>
+        <div><h2 id="offers-title">Alle Angebote</h2><p class="section-subtitle">Nach Firma, Stichwort, Kategorie oder Angebotsart filtern.</p></div>
         <p class="results-count" id="results-count" role="status" aria-live="polite" aria-atomic="true"></p>
       </div>
       <div class="filter-panel" role="search" aria-label="Angebote suchen und filtern">
@@ -540,24 +462,23 @@
       <div id="offer-groups"></div>
       <div id="no-results" class="empty-state" hidden>
         <span class="empty-symbol" aria-hidden="true"><svg class="icon"><use href="#i-search"/></svg></span>
-        <h3>Noch kein passender Treffer.</h3>
-        <p>Versuche ein anderes Stichwort oder setze die Filter zurück. Deine Merkliste bleibt dabei erhalten.</p>
+        <h3>Keine passenden Angebote</h3>
+        <p>Ein anderes Stichwort wählen oder die Filter zurücksetzen. Die Merkliste bleibt dabei erhalten.</p>
         <button class="btn btn-primary" type="button" data-reset>Alle Filter zurücksetzen</button>
       </div>
-      <noscript><div class="noscript">Bitte aktiviere JavaScript, um die Angebote, Filter und Merkliste zu nutzen. Alle Daten und Bilder sind bereits in dieser Datei enthalten; eine Internetverbindung ist nicht nötig.</div></noscript>
+      <noscript><div class="noscript">Für die Angebote, Filter und Merkliste muss JavaScript aktiviert sein. Alle Daten und Bilder sind in dieser Datei enthalten; eine Internetverbindung ist nicht nötig.</div></noscript>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-top"><p><strong>Gute Zeit lässt sich teilen.</strong><br><span id="footer-region"></span></p><a href="#start">Zurück nach oben ↑</a></div>
-      <details><summary>Über die Daten und Bilder</summary><p id="category-source-note"></p><p>Die Kennzahlen für 2für1 und 50 % Rabatt zählen die reinen Angebotsarten. Kombinationen, 4für2 und 8für4 findest du unter «Weitere».</p><p>Die Angebotstexte entsprechen der Quelldatei. Auf den Karten wird nur bei einfachen Deals das bereits separat gezeigte Präfix weggelassen. Die Schreibweise bleibt erhalten.</p><p>Alle vorhandenen, passend zugeordneten Bilder sind eingebettet. Für folgende Rückseiten wird eine Ersatzdarstellung verwendet:</p><ul id="image-issues"></ul><p>Deine Merkliste wird nur für diese Tab-Sitzung gespeichert. Mit «Als Text exportieren» kannst du sie mitnehmen. Einzelheiten zu einem Angebot stehen auf seiner Gutschein-Rückseite.</p></details>
+      <div class="footer-top"><p id="footer-region"></p><a href="#start">Zurück nach oben ↑</a></div>
     </div>
   </footer>
 
   <dialog id="favorites-dialog" aria-labelledby="favorites-title" aria-describedby="session-info">
-    <header class="dialog-header"><div><p class="eyebrow">Gesammelt für gute Zeiten</p><h2 id="favorites-title" tabindex="-1">Meine Merkliste <span class="count" data-favorites-count>0</span></h2></div><button class="icon-btn" type="button" data-close="favorites-dialog" aria-label="Merkliste schliessen"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></header>
-    <p class="session-info" id="session-info">Bleibt in diesem Tab gespeichert. Mit dem Textexport nimmst du deine Auswahl mit.</p>
+    <header class="dialog-header"><div><h2 id="favorites-title" tabindex="-1">Merkliste <span class="count" data-favorites-count>0</span></h2></div><button class="icon-btn" type="button" data-close="favorites-dialog" aria-label="Merkliste schliessen"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button></header>
+    <p class="session-info" id="session-info">Die Auswahl bleibt für diese Tab-Sitzung gespeichert und kann als Textdatei exportiert werden.</p>
     <div class="dialog-body favorites-content" id="favorites-content"></div>
     <footer class="dialog-footer favorites-actions"><button class="btn danger-btn" type="button" id="clear-favorites"><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg>Liste leeren</button><button class="btn btn-primary" type="button" id="export-favorites"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Als Text exportieren</button></footer>
     <p class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-announcer></p>
@@ -571,7 +492,7 @@
         <div class="image-stage" id="image-stage" tabindex="0" role="region" aria-label="Gutscheinbild" aria-busy="false"><div class="image-canvas" id="image-canvas"></div></div>
         <p class="image-caption" id="image-caption"></p>
       </div>
-      <section class="detail-summary" aria-label="Angebot im Überblick"><p class="eyebrow">Dein Gutschein</p><div id="detail-deal"></div><p class="detail-offer" id="detail-offer"></p><p class="detail-category-tag" id="detail-category-tag"></p><p class="detail-note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>Auf der Rückseite findest du die Einzelheiten zum Angebot. Mit der Lupe kannst du das Bild in voller Auflösung lesen.</p></section>
+      <section class="detail-summary" aria-label="Angebot im Überblick"><p class="eyebrow">Angebot</p><div id="detail-deal"></div><p class="detail-offer" id="detail-offer"></p><p class="detail-category-tag" id="detail-category-tag"></p><p class="detail-note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>Einzelheiten und Bedingungen stehen auf der Rückseite. Die Lupe vergrössert das Bild auf die volle Auflösung.</p></section>
     </div>
     <footer class="dialog-footer"><button class="btn nav-offer" type="button" id="previous-offer" aria-label="Zurück zum vorherigen Angebot"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg><span class="nav-label">Zurück</span></button><p class="detail-position"><span id="detail-position"></span><span class="detail-keyboard">← → blättern · Esc schliessen</span></p><button class="btn nav-offer" type="button" id="next-offer" aria-label="Weiter zum nächsten Angebot"><span class="nav-label">Weiter</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></footer>
     <p class="sr-only" id="detail-status" role="status" aria-live="polite" aria-atomic="true"></p>
@@ -587,7 +508,7 @@
 
   <!-- Angebotsdaten ohne externe Foto-URLs. Die Schreibweise ist unverändert. -->
   <script type="application/json" id="book-data">@@BOOK_DATA@@</script>
-  <!-- Redaktionelle Auswahl: ausschliesslich Referenzen auf Angebote aus book-data. -->
+  <!-- Ausgewählte Angebote; ergänzende Angaben von den jeweiligen Gutschein-Rückseiten. -->
   <script type="application/json" id="highlights-data">@@HIGHLIGHTS_DATA@@</script>
   <!-- BILDDATEN: je Angebots-ID ein separat und erst bei Bedarf geparster Datenblock. -->
   @@IMAGE_DATA@@
@@ -623,7 +544,9 @@
     const favorites = loadFavorites();
     const filters = { category: 'all', deal: 'all', query: '', favoritesOnly: false };
     let visibleOffers = [...offers];
-    let audienceIndex = 0;
+    let highlightIndex = 0;
+    let highlightScrollTimer;
+    const highlightTrack = $('#highlight-track');
     const cardNodes = new Map();
     const groupNodes = new Map();
     const imageBlocks = new Map($$('script[data-image-id]').map(node => [node.dataset.imageId, node]));
@@ -707,8 +630,8 @@
 
     function updateStorageNote() {
       $('#session-info').textContent = storageAvailable
-        ? 'Bleibt in diesem Tab gespeichert. Mit dem Textexport nimmst du deine Auswahl mit.'
-        : 'Der Sitzungsspeicher ist hier nicht verfügbar. Deine Auswahl funktioniert weiterhin, geht aber beim Neuladen verloren. Nimm sie mit dem Textexport mit.';
+        ? 'Die Auswahl bleibt für diese Tab-Sitzung gespeichert und kann als Textdatei exportiert werden.'
+        : 'Der Sitzungsspeicher ist nicht verfügbar. Die Auswahl geht beim Neuladen verloren und kann vorher als Textdatei exportiert werden.';
     }
 
     function announce(message) {
@@ -756,46 +679,104 @@
     function renderHeader() {
       const shortRegion = book.region.split(' (')[0];
       const edition = (book.region.match(/\b20\d{2}\b/g) || []).at(-1);
-      $('#brand-region').textContent = shortRegion;
-      $('#hero-region').textContent = shortRegion;
-      $('#edition-label').textContent = `${shortRegion}${edition ? ` · Ausgabe ${edition}` : ''}`;
-      $('#ticket-edition').textContent = edition || shortRegion;
+      const area = (book.region.match(/\(([^)]+)\)/)?.[1] || '').replace(/\s*20\d{2}\s*$/u, '').trim();
+      $('#edition-region').textContent = shortRegion;
+      $('#edition-area').textContent = area ? `${area}${edition ? ' · ' : ''}` : '';
+      $('#edition-year').textContent = edition ? `Ausgabe ${edition}` : '';
       $('#footer-region').textContent = book.region;
-      $('#stat-total').textContent = numberFormat.format(offers.length);
-      $('#stat-two').textContent = numberFormat.format(dealTypes.find(type => type.key === 'two').count);
-      $('#stat-half').textContent = numberFormat.format(dealTypes.find(type => type.key === 'half').count);
-      $('#stat-companies').textContent = numberFormat.format(new Set(offers.map(offer => offer.firma)).size);
       $$('[data-total-count]').forEach(node => { node.textContent = numberFormat.format(offers.length); });
-      $('#category-source-note').textContent = book.hinweis;
-      $('#image-issues').innerHTML = offers.filter(offer => book.bildhinweise[offer.id]).map(offer =>
-        `<li>Nr. ${offer.nr} – ${escapeHtml(offer.firma)}: ${escapeHtml(book.bildhinweise[offer.id].rueckseite)}</li>`
-      ).join('');
     }
 
     function renderHighlights() {
-      const group = highlights[audienceIndex];
-      $('#audience-tabs').innerHTML = highlights.map((item, index) =>
-        `<button type="button" class="audience-tab" id="audience-${item.id}" role="tab" data-audience="${index}" aria-selected="${index === audienceIndex}" aria-controls="audience-panel" tabindex="${index === audienceIndex ? 0 : -1}">${icon(item.icon)}${escapeHtml(item.name)}</button>`
-      ).join('');
-      $('#audience-panel').setAttribute('aria-labelledby', `audience-${group.id}`);
-      $('#audience-intro').textContent = group.intro;
-      if (pictureObserver) $$('img[data-lazy]', $('#highlight-grid')).forEach(image => pictureObserver.unobserve(image));
-      $('#highlight-grid').innerHTML = group.angebote.map(pick => {
+      highlightTrack.innerHTML = highlights.map(pick => {
         const offer = offerById.get(pick.id);
-        return `<article class="highlight-card ${categoryClass(offer)}" data-highlight-id="${offer.id}">
-          ${thumbnail(offer)}
-          <div class="highlight-content"><span class="mini-deal">${escapeHtml(formatDeal(offer))}</span><h3><button type="button" class="stretched-open" id="highlight-open-${offer.id}" data-open="${offer.id}" data-context="highlights" aria-haspopup="dialog" aria-controls="detail-dialog">${escapeHtml(offer.firma)}</button></h3><p class="highlight-copy">${escapeHtml(pick.satz)}</p></div>
-          <div class="highlight-footer"><span aria-hidden="true">Gutschein entdecken ↗</span>${saveButton(offer, 'highlight')}</div>
+        return `<article class="highlight-card ${categoryClass(offer)}" data-highlight-id="${offer.id}" aria-labelledby="highlight-title-${offer.id}">
+          <div class="highlight-media">${thumbnail(offer)}<div class="highlight-deal">${dealMarkup(offer)}<p class="highlight-service">${escapeHtml(pick.leistung)}</p></div></div>
+          <div class="highlight-content">
+            <p class="highlight-location">${escapeHtml(pick.ort)}</p>
+            <h2 id="highlight-title-${offer.id}"><button type="button" class="stretched-open" id="highlight-open-${offer.id}" data-open="${offer.id}" data-context="highlights" aria-haspopup="dialog" aria-controls="detail-dialog">${escapeHtml(offer.firma)}</button></h2>
+            <p class="highlight-copy">${escapeHtml(pick.beschreibung)}</p>
+            <dl class="highlight-facts"><div><dt>Einlösung</dt><dd>${escapeHtml(pick.einloesung)}</dd></div><div><dt>Gültig</dt><dd>${escapeHtml(pick.gueltigkeit)}</dd></div></dl>
+            <div class="highlight-footer"><span class="highlight-cta" aria-hidden="true">Gutschein ansehen ${icon('arrow')}</span>${saveButton(offer, 'highlight')}</div>
+          </div>
         </article>`;
       }).join('');
+      $('#highlight-pagination').innerHTML = highlights.map((pick, index) =>
+        `<button class="highlight-dot" type="button" data-highlight-target="${index}" aria-label="${index + 1}: ${escapeHtml(offerById.get(pick.id).firma)}" aria-controls="highlight-track" aria-current="${index === highlightIndex}"></button>`
+      ).join('');
+      updateHighlightControls();
       syncFavorites();
-      observeThumbnails($('#highlight-grid'));
+      observeThumbnails(highlightTrack);
     }
 
-    function selectAudience(index, focus = false) {
-      audienceIndex = (index + highlights.length) % highlights.length;
-      renderHighlights();
-      if (focus) $(`[data-audience="${audienceIndex}"]`).focus({ preventScroll: true });
+    function updateHighlightControls() {
+      $('#highlight-position').textContent = `${highlightIndex + 1} / ${highlights.length}`;
+      $('#previous-highlight').disabled = highlightIndex === 0;
+      $('#next-highlight').disabled = highlightIndex === highlights.length - 1;
+      $$('[data-highlight-target]').forEach(button => button.setAttribute('aria-current', String(Number(button.dataset.highlightTarget) === highlightIndex)));
+    }
+
+    function goToHighlight(index, animate = true) {
+      const cards = $$('.highlight-card', highlightTrack);
+      highlightIndex = Math.max(0, Math.min(index, cards.length - 1));
+      updateHighlightControls();
+      highlightTrack.scrollTo({ left: cards[highlightIndex].offsetLeft - cards[0].offsetLeft, behavior: animate ? 'auto' : 'instant' });
+    }
+
+    function syncHighlightPosition() {
+      window.clearTimeout(highlightScrollTimer);
+      const cards = $$('.highlight-card', highlightTrack);
+      const distance = card => Math.abs(card.offsetLeft - cards[0].offsetLeft - highlightTrack.scrollLeft);
+      highlightIndex = cards.reduce((closest, card, index) => distance(card) < distance(cards[closest]) ? index : closest, 0);
+      updateHighlightControls();
+    }
+
+    function bindHighlightAutoplay() {
+      const section = $('#highlights');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const delay = 5000;
+      let timer;
+      let visible = false;
+      let stopped = false;
+
+      function schedule() {
+        window.clearTimeout(timer);
+        const active = !stopped && visible && !document.hidden && !reducedMotion.matches && highlights.length > 1;
+        // Automatische Wechsel werden nicht laufend vom Screenreader angesagt.
+        $('#highlight-position').setAttribute('aria-live', active ? 'off' : 'polite');
+        if (!active) return;
+        timer = window.setTimeout(() => {
+          if (!$('dialog[open]')) goToHighlight((highlightIndex + 1) % highlights.length);
+          schedule();
+        }, delay);
+      }
+
+      function stop() {
+        if (stopped) return;
+        stopped = true;
+        schedule();
+        // Auch eine gerade laufende automatische Bewegung sofort beenden.
+        highlightTrack.scrollTo({ left: highlightTrack.scrollLeft, behavior: 'instant' });
+      }
+
+      // Native Scroll-Ereignisse entstehen auch beim automatischen Blättern.
+      // Nur Bedienung beendet die Automatik, bis die Seite neu geladen wird.
+      for (const event of ['pointerenter', 'pointerdown', 'wheel', 'focusin', 'keydown', 'click']) {
+        section.addEventListener(event, stop, { capture: true, passive: true });
+      }
+      document.addEventListener('visibilitychange', schedule);
+      reducedMotion.addEventListener('change', schedule);
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(([entry]) => {
+          visible = entry.isIntersecting && entry.intersectionRatio >= .25;
+          schedule();
+        }, { threshold: .25 });
+        observer.observe(highlightTrack);
+      } else {
+        visible = true;
+        schedule();
+      }
+      if (section.matches(':hover') || section.contains(document.activeElement)) stop();
     }
 
     function renderFilters() {
@@ -899,7 +880,7 @@
       const activeId = active?.id;
       const groups = sortedFavoriteGroups();
       if (!groups.length) {
-        root.innerHTML = `<div class="empty-state"><span class="empty-symbol" aria-hidden="true">${icon('heart')}</span><h3>Hier ist Platz für Vorfreude.</h3><p>Tippe auf ein Herz, um ein Angebot zu merken. Deine Auswahl findest du hier – bereit zum Entdecken und Mitnehmen.</p><button class="btn btn-primary" type="button" data-close="favorites-dialog">Angebote entdecken ${icon('arrow')}</button></div>`;
+        root.innerHTML = `<div class="empty-state"><span class="empty-symbol" aria-hidden="true">${icon('heart')}</span><h3>Keine gemerkten Angebote</h3><p>Mit dem Herz-Symbol lassen sich Angebote zur Merkliste hinzufügen.</p><button class="btn btn-primary" type="button" data-close="favorites-dialog">Zur Übersicht ${icon('arrow')}</button></div>`;
       } else {
         root.innerHTML = groups.map(category => `<section class="saved-group category-${category.key}" aria-labelledby="saved-heading-${category.key}"><h3 class="saved-category" id="saved-heading-${category.key}"><span class="dot" aria-hidden="true"></span>${escapeHtml(category.name)}<span class="count">${category.offers.length}</span></h3><ul class="saved-list">${category.offers.map(offer =>
           `<li class="saved-item" data-saved-id="${offer.id}"><button type="button" class="saved-open" id="saved-open-${offer.id}" data-open="${offer.id}" data-context="favorites" aria-haspopup="dialog" aria-controls="detail-dialog"><span class="saved-firma">${escapeHtml(offer.firma)}</span><span class="saved-deal">${escapeHtml(formatDeal(offer))}</span><span class="saved-text">${escapeHtml(offer.angebot)}</span></button><button class="icon-btn" type="button" id="saved-remove-${offer.id}" data-remove="${offer.id}" aria-label="${escapeHtml(offer.firma)}: Angebot ${offer.nr} aus der Merkliste entfernen">${icon('close')}</button></li>`
@@ -979,7 +960,7 @@
       stage.setAttribute('aria-busy', 'false');
       $('#zoom-image').disabled = true;
       $('#image-canvas').innerHTML = `<div class="image-fallback"><p class="eyebrow">${detailSide === 'vorderseite' ? 'Vorderseite' : 'Rückseite'} · Ersatzdarstellung</p>${dealMarkup(offer)}<h3>${escapeHtml(offer.firma)}</h3><p class="fallback-offer">${escapeHtml(offer.angebot)}</p><p class="detail-category-tag">${escapeHtml(offer.kategorie)}</p><p class="fallback-note">${escapeHtml(message)}</p></div>`;
-      $('#image-caption').textContent = 'Bild nicht verfügbar · Die Angebotsdaten aus der JSON bleiben vollständig sichtbar.';
+      $('#image-caption').textContent = 'Bild nicht verfügbar · Die Angaben zum Angebot stehen hier als Text.';
     }
 
     function renderPicture(offer) {
@@ -998,7 +979,7 @@
       stage.style.setProperty('--image-width', `${picture.width}px`);
       stage.style.setProperty('--image-height', `${picture.height}px`);
       $('#zoom-image').disabled = true;
-      canvas.innerHTML = '<p class="image-loading">Bild wird vorbereitet …</p>';
+      canvas.innerHTML = '<p class="image-loading">Bild wird geladen …</p>';
       const image = new Image();
       image.id = 'detail-image';
       image.alt = `${offer.firma} – ${detailSide === 'vorderseite' ? 'Vorderseite' : 'Rückseite'}`;
@@ -1012,7 +993,7 @@
         stage.setAttribute('aria-busy', 'false');
         $('#zoom-image').disabled = false;
       }).catch(() => {
-        if (version === pictureVersion) renderFallback(offer, 'Dieses Bild konnte nicht angezeigt werden. Die Angebotsdaten findest du hier.');
+        if (version === pictureVersion) renderFallback(offer, 'Dieses Bild konnte nicht angezeigt werden. Die Angaben zum Angebot werden als Text angezeigt.');
       });
     }
 
@@ -1051,7 +1032,7 @@
         `Merkliste - Gutscheinbuch ${book.region}`,
         '='.repeat(64), '',
         `Exportdatum: ${date}`, `Gemerkte Angebote: ${favorites.size}`, '',
-        'Einzelheiten zu den Angeboten findest du auf der jeweiligen Gutschein-Rückseite.', ''
+        'Einzelheiten und Bedingungen stehen auf der jeweiligen Gutschein-Rückseite.', ''
       ];
       sortedFavoriteGroups().forEach(category => {
         lines.push(category.name, '-'.repeat(64), '');
@@ -1068,7 +1049,7 @@
       anchor.click();
       anchor.remove();
       window.setTimeout(() => URL.revokeObjectURL(url), 30000);
-      announce('Deine Merkliste wurde als Textdatei exportiert.');
+      announce('Die Merkliste wurde als Textdatei exportiert.');
     }
 
     function bindDialogs() {
@@ -1111,18 +1092,30 @@
         else if (button.hasAttribute('data-reset')) resetFilters();
         else if (button.hasAttribute('data-category')) { filters.category = button.dataset.category; applyFilters(); }
         else if (button.hasAttribute('data-deal')) { filters.deal = button.dataset.deal; applyFilters(); }
-        else if (button.hasAttribute('data-audience')) selectAudience(Number(button.dataset.audience), true);
+        else if (button.hasAttribute('data-highlight-target')) goToHighlight(Number(button.dataset.highlightTarget));
         else if (button.hasAttribute('data-side')) { detailSide = button.dataset.side; renderDetail(); }
       });
       $('#search').addEventListener('input', event => { filters.query = event.target.value; applyFilters(); });
       $('#remembered-only').addEventListener('change', event => { filters.favoritesOnly = event.target.checked; applyFilters(); });
-      $('#audience-tabs').addEventListener('keydown', event => {
-        if (!event.target.matches('[data-audience]')) return;
-        const directions = { ArrowRight: audienceIndex + 1, ArrowLeft: audienceIndex - 1, Home: 0, End: highlights.length - 1 };
+      $('#previous-highlight').addEventListener('click', () => goToHighlight(highlightIndex - 1));
+      $('#next-highlight').addEventListener('click', () => goToHighlight(highlightIndex + 1));
+      highlightTrack.addEventListener('keydown', event => {
+        if (event.target !== highlightTrack || event.altKey || event.ctrlKey || event.metaKey) return;
+        const directions = { ArrowRight: highlightIndex + 1, ArrowLeft: highlightIndex - 1, Home: 0, End: highlights.length - 1 };
         if (!(event.key in directions)) return;
         event.preventDefault();
-        selectAudience(directions[event.key], true);
+        goToHighlight(directions[event.key]);
       });
+      highlightTrack.addEventListener('scroll', () => {
+        window.clearTimeout(highlightScrollTimer);
+        highlightScrollTimer = window.setTimeout(syncHighlightPosition, 120);
+      }, { passive: true });
+      highlightTrack.addEventListener('scrollend', syncHighlightPosition);
+      highlightTrack.addEventListener('focusin', event => {
+        const card = event.target.closest('[data-highlight-id]');
+        if (card) goToHighlight(highlights.findIndex(pick => pick.id === card.dataset.highlightId), false);
+      });
+      window.addEventListener('resize', () => goToHighlight(highlightIndex, false));
       $('#previous-offer').addEventListener('click', () => navigateOffer(-1));
       $('#next-offer').addEventListener('click', () => navigateOffer(1));
       $('#zoom-image').addEventListener('click', () => {
@@ -1150,6 +1143,7 @@
         announce('Die Merkliste wurde geleert.');
       });
       bindDialogs();
+      bindHighlightAutoplay();
     }
 
     renderHeader();

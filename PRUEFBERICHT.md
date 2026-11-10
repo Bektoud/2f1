@@ -1,10 +1,10 @@
 # Prüfbericht
 
-**Datum:** 6. November 2026
+**Datum:** 10. November 2026
 
 **Ausgabedatei:** `index.html`
 
-**Grösse:** 32’863’344 Bytes (32,86 MB / 31,34 MiB)
+**Grösse:** 32’858’066 Bytes (32,86 MB / 31,34 MiB)
 
 ## Daten und Bildarchiv
 
@@ -21,10 +21,20 @@
 - Komprimierte Vorder- und Rückseiten stichprobenweise visuell mit den Originalen verglichen. Der Text bleibt in voller Bildansicht lesbar; zusätzlich steht ein Zoom zur Verfügung.
 - Keine externen Foto-URLs in der Ausgabedatei. Alle statischen Ressourcen sind eingebettete Daten oder Dokumentfragmente. Externe Verbindungen sind zusätzlich durch die Content Security Policy ausgeschlossen.
 - JavaScript-Syntax mit `node --check` geprüft. Endgrösse und SHA-256 gegen `bildpruefung.json` geprüft.
+- Die sieben Highlights verweisen auf die Angebote 126, 45, 119, 61, 17, 53 und 103. Ortsangaben, Leistungen, Einlösebedingungen und Gültigkeiten wurden mit den Original-Rückseiten abgeglichen.
+
+## Überarbeitung des Einstiegs
+
+- Das bisherige Dashboard mit Werbetexten, Kennzahlen und Zielgruppen wurde durch eine horizontal scrollbare Auswahl von sieben grösseren Angeboten ersetzt.
+- sole uno, FC Basel, aquabasilea, Seilpark Balmberg, Restaurant Seegarten, Kino Sputnik und Metzgerei Zimmermann werden mit sachlichen Zusatzinformationen vorgestellt.
+- Der Kopfbereich zeigt Region und Ausgabe. Oberflächentexte, Leerzustände und Hilfetexte sind neutral formuliert.
+- Der technische Abschnitt zu Daten und Bildern steht in `README.md` und wurde aus dem Seitenfuss entfernt.
+- Vorschaubilder füllen ihre Bildfläche; die schmalen seitlichen Leerstreifen durch das bisherige Einpassen sind beseitigt. Die vollständigen Gutscheinseiten bleiben im Detailfenster einpassbar und vergrösserbar.
+- Die Highlights blättern alle fünf Sekunden automatisch weiter, einschliesslich Rückkehr zum ersten Angebot. Interaktion beendet die Automatik bis zum Neuladen; manuelles Blättern bleibt möglich.
 
 ## Browserprüfungen
 
-**26 erfolgreiche Prüfgruppen**, jeweils 13 in:
+**30 erfolgreiche Prüfgruppen**, jeweils 15 in:
 
 - Chromium 158.0.8127.18
 - Firefox 159.0
@@ -33,19 +43,24 @@ Die Website wurde direkt über `file://` geöffnet; das Netzwerk des Browser-Kon
 
 | Bereich | Verifiziert |
 | --- | --- |
-| Vollständigkeit | Genau 128 sichtbare Karten ohne Filter; fünf Gruppen; korrekte, aus den Daten berechnete Kennzahlen |
+| Vollständigkeit | Genau 128 sichtbare Karten ohne Filter; fünf Gruppen; korrekte, aus den Daten berechnete Filterzahlen; Region und Ausgabe im Kopfbereich |
 | Angebotstexte | Präfixentfernung bei einfachen Deals; Gross-/Kleinschreibung erhalten; gemischte Deals und die Rabatt-Obergrenze bei Nr. 95 bleiben vollständig |
 | Filter | Alle 24 Kombinationen aus sechs Kategorie-Auswahlen und vier Deal-Auswahlen; Zustandsattribute; Live-Trefferzahl |
 | Suche | Firmen- und Stichwortsuche, mehrere Suchbegriffe, Gross-/Kleinschreibung und Suche mit/ohne Akzente |
 | Leerzustand | Keine Treffer, hilfreiche Meldung und vollständiges Zurücksetzen aller Filter |
-| Dashboard | Alle sechs Zielgruppen mit je vier korrekten Verweisen; Öffnen der jeweiligen Details; Tab-Umschaltung mit Pfeilen, Home und End |
+| Highlights | Sieben korrekte Verweise mit Zusatzangaben; Vor-/Zurück-Knöpfe, Direktwahl, horizontales Scrollen, Pfeiltasten, Home und End; Öffnen der Details und Rückgabe des Fokus |
+| Automatisches Blättern | Mit Browser-Testuhr geprüft: erster Wechsel nach fünf Sekunden, alle sieben Angebote, Rückkehr zum Anfang; die jeweils ausgewählte Karte ist vollständig sichtbar |
+| Interaktionsstopp | Mauszeiger über den Highlights, Touch auf eine Karte und Tastaturfokus beenden die Automatik; auch nach Verlassen des Bereichs bleibt sie aus, manuelle Pfeile funktionieren weiterhin |
+| Automatik-Pausen | Kein Wechsel ausserhalb des sichtbaren Bereichs, bei reduzierter Bewegung oder während geöffneter Dialoge; automatisches Weiterblättern setzt danach ohne vorherige Interaktion wieder ein |
+| Highlight-Tastatur | Tab-Reihenfolge zwischen Angebotsaufruf und Merk-Knopf; beim Fokussieren eines weiteren Highlights wird dessen Karte in den sichtbaren Bereich gescrollt |
+| Vorschaubilder | Bündiger Abschluss links und rechts, auch im dunklen Modus; kleine Angebotskarten und grössere Highlight-Darstellung visuell geprüft |
 | Detailfenster | Öffnen per Karte, Bildfläche und Tastatur; Vorder-/Rückseiten; passende Alternativtexte; vollständiges Einpassen statt Abschneiden |
 | Stabile Darstellung | Identische Grösse des Bildbereichs beim Seitenwechsel, einschliesslich Ersatzdarstellungen |
 | Zoom | Volle eingebettete Auflösung, Scrollen mit Tastatur, Einpassen; kein seitliches Scrollen der Seite |
 | Navigation | Vor-/Zurück-Knöpfe und Pfeiltasten; Ringnavigation in der Gesamtliste und einer gefilterten Liste |
 | Schliessen und Fokus | Schliessknopf, Escape, Hintergrundklick, Fokus beim Öffnen und Rückgabe an den Auslöser; Fokusbegrenzung mit Tab/Shift+Tab |
 | Fehlende Bilder | Ersatz-Rückseiten Nr. 70, 71 und 121 mit korrektem Deal, Firma, Angebotstext, Kategorie und Bildhinweis |
-| Merken | Herz-Klick öffnet kein Detailfenster; synchroner Zustand in Karte, Dashboard und Detail, auch beim Blättern |
+| Merken | Herz-Klick öffnet kein Detailfenster; synchroner Zustand in Karte, Highlights und Detail, auch beim Blättern |
 | Gemerkt-Filter | Kombination mit Suche, Kategorie und Deal; Filter verändern die Merkliste nicht |
 | Sitzungsdauer | Auswahl bleibt beim Neuladen; ein neuer Tab startet mit leerer Merkliste |
 | Merkliste | Gruppierung, alphabetische Firmenreihenfolge, Detailaufruf, Einzelentfernung und hilfreicher Leerzustand |
@@ -54,7 +69,7 @@ Die Website wurde direkt über `file://` geöffnet; das Netzwerk des Browser-Kon
 | Speicher-Fallback | Lesender und schreibender Zugriff auf blockiertes `sessionStorage` werfen Fehler; die Merkliste funktioniert dennoch im Arbeitsspeicher |
 | Responsive Layout | 320, 390, 768, 1024 und 1440 Pixel Breite; kein horizontaler Seitenüberlauf; beide Fenster auf schmalem Bildschirm |
 | Erscheinungsbild | Heller und dunkler Gerätemodus, einschliesslich Merkliste; Screenshots visuell geprüft |
-| Reduzierte Bewegung | `prefers-reduced-motion: reduce` deaktiviert sanftes Scrollen und Übergänge |
+| Reduzierte Bewegung | `prefers-reduced-motion: reduce` deaktiviert automatisches Blättern, sanftes Scrollen der Seite und Highlights sowie Übergänge; Änderungen der Einstellung werden unmittelbar berücksichtigt |
 | Laufzeit/Offline | Keine externen HTTP(S)-Requests, keine JavaScript- oder Konsolenfehler; Gutscheinseiten werden erst bei Bedarf dekodiert |
 
 ## Tatsächlicher Textexport
